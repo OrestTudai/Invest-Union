@@ -1,0 +1,1 @@
+export { ReadMoreInteresting as default } from './ReadMoreInteresting';

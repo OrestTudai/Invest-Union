@@ -1,4 +1,11 @@
-import {AboutInvestUnion, HomeHero, MoreThanJustWood, WhyInvestUnionIsLeader} from "@/sections";
+import {
+  AboutInvestUnion, Contacts,
+  CustomerReviews,
+  DevelopBusiness,
+  HomeHero,
+  MoreThanJustWood, QuestionsAndAnswers, ReadMoreInteresting,
+  WhyInvestUnionIsLeader
+} from "@/sections";
 
 export default function Home() {
   return (
@@ -7,6 +14,11 @@ export default function Home() {
       <AboutInvestUnion />
       <WhyInvestUnionIsLeader />
       <MoreThanJustWood />
+      <CustomerReviews />
+      <DevelopBusiness />
+      <QuestionsAndAnswers />
+      <ReadMoreInteresting />
+      <Contacts />
     </>
   );
 }
