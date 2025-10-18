@@ -1,0 +1,1 @@
+export { WhyInvestUnionIsLeader as default } from "./WhyInvestUnionIsLeader";

@@ -1,1 +1,0 @@
-export { CustomerReviews as default } from './CustomerReviews'

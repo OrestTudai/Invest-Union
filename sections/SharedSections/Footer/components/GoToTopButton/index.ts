@@ -1,0 +1,1 @@
+export { GoToTopButton as default } from './GoToTopButton'

@@ -1,0 +1,1 @@
+export { TeamValuesItem as default } from './TeamValuesItem'

@@ -1,1 +1,0 @@
-export { QuestionAndAnswerItem as default } from './QuestionAndAnswerItem'

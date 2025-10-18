@@ -1,1 +1,0 @@
-export { ReasonCard as default } from './ReasonCard'

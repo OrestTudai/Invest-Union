@@ -1,0 +1,1 @@
+export { TeamValues as default } from './TeamValues'

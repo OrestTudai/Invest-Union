@@ -1,1 +1,0 @@
-export { DevelopBusiness as default } from "./DevelopBusiness"

@@ -1,1 +1,0 @@
-export { AboutInvestUnion as default } from "./AboutInvestUnion"

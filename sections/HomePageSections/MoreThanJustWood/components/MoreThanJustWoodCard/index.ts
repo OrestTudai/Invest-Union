@@ -1,0 +1,1 @@
+export { MoreThanJustWoodCard as default } from './MoreThanJustWoodCard'

@@ -1,14 +1,18 @@
-import HomeHero from "@/sections/HomeHero";
-import Header from "@/sections/Header";
-import Footer from "@/sections/Footer";
-import AboutInvestUnion from "@/sections/AboutInvestUnion";
-import WhyInvestUnionIsLeader from "@/sections/WhyInvestUnionIsLeader";
-import MoreThanJustWood from "@/sections/MoreThanJustWood";
-import CustomerReviews from "@/sections/CustomerReviews";
-import DevelopBusiness from "@/sections/DevelopBusiness";
-import QuestionsAndAnswers from "@/sections/QuestionsAndAnswers";
-import ReadMoreInteresting from "@/sections/ReadMoreInteresting";
-import Contacts from "@/sections/Contacts";
+import HomeHero from "@/sections/HomePageSections/HomeHero";
+import Header from "@/sections/SharedSections/Header";
+import Footer from "@/sections/SharedSections/Footer";
+import AboutInvestUnion from "@/sections/HomePageSections/AboutInvestUnion";
+import WhyInvestUnionIsLeader from "@/sections/HomePageSections/WhyInvestUnionIsLeader";
+import MoreThanJustWood from "@/sections/HomePageSections/MoreThanJustWood";
+import CustomerReviews from "@/sections/HomePageSections/CustomerReviews";
+import DevelopBusiness from "@/sections/HomePageSections/DevelopBusiness";
+import QuestionsAndAnswers from "@/sections/HomePageSections/QuestionsAndAnswers";
+import ReadMoreInteresting from "@/sections/HomePageSections/ReadMoreInteresting";
+import Contacts from "@/sections/HomePageSections/Contacts";
+import AboutUsHero from "@/sections/AboutUsSections/AboutUsHero";
+import History from "@/sections/AboutUsSections/History";
+import TeamValues from "@/sections/AboutUsSections/TeamValues";
+import ProductionPower from "@/sections/AboutUsSections/ProductionPower";
 
 export {
   HomeHero,
@@ -22,4 +26,8 @@ export {
   QuestionsAndAnswers,
   ReadMoreInteresting,
   Contacts,
+  AboutUsHero,
+  History,
+  TeamValues,
+  ProductionPower,
 };

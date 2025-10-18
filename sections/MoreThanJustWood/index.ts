@@ -1,1 +1,0 @@
-export { MoreThanJustWood as default } from "./MoreThanJustWood";
