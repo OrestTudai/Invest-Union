@@ -20,6 +20,17 @@ import ProductionPowerThirdSm from './production-power-third-sm.png'
 import ProductionPowerFourthSm from './production-power-fourth-sm.png'
 import ProductionPowerFifthSm from './production-power-fifth-sm.png'
 import ProductionPowerSixthSm from './production-power-sixth-sm.png'
+import GalleryFirstImage from './gallery-first-image.png'
+import GallerySecondImage from './gallery-second-image.png'
+import GalleryThirdImage from './gallery-third-image.png'
+import GalleryFourthImage from './gallery-fourth-image.png'
+import GalleryFifthImage from './gallery-fifth-image.png'
+import GallerySixthImage from './gallery-sixth-image.png'
+import GallerySeventhImage from './gallery-seventh-image.png'
+import GalleryEighthImage from './gallery-eighth-image.png'
+import GalleryNinethImage from './gallery-nineth-image.png'
+import GalleryTenthImage from './gallery-tenth-image.png'
+import GalleryEleventhImage from './gallery-image-eleventh.png'
 
 export {
   HomeHeroBgSm,
@@ -44,4 +55,15 @@ export {
   ProductionPowerFourthSm,
   ProductionPowerFifthSm,
   ProductionPowerSixthSm,
+  GalleryFirstImage,
+  GallerySecondImage,
+  GalleryThirdImage,
+  GalleryFourthImage,
+  GalleryFifthImage,
+  GallerySixthImage,
+  GallerySeventhImage,
+  GalleryEighthImage,
+  GalleryNinethImage,
+  GalleryTenthImage,
+  GalleryEleventhImage,
 }

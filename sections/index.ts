@@ -13,6 +13,7 @@ import AboutUsHero from "@/sections/AboutUsSections/AboutUsHero";
 import History from "@/sections/AboutUsSections/History";
 import TeamValues from "@/sections/AboutUsSections/TeamValues";
 import ProductionPower from "@/sections/AboutUsSections/ProductionPower";
+import Gallery from "@/sections/GallerySections/Gallery";
 
 export {
   HomeHero,
@@ -30,4 +31,5 @@ export {
   History,
   TeamValues,
   ProductionPower,
+  Gallery,
 };

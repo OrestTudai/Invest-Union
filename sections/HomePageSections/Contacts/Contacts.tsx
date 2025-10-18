@@ -4,9 +4,14 @@ import {Mail, Phone} from "@/assets/svg";
 import {ButtonType} from "@/components/GreenButton";
 import FormInput from "@/sections/HomePageSections/Contacts/components/FormInput";
 
-export const Contacts = () => {
+type Props = {
+  hasPaddingTop?: boolean;
+  paddingTop?: number;
+}
+
+export const Contacts = ({ hasPaddingTop = false, paddingTop = 100 }: Props) => {
   return (
-    <section className="pb-[100px] px-4">
+    <section className={`${hasPaddingTop && `pt-[${paddingTop}px]`} pb-[100px] px-4`}>
       <SectionName heading={'Контакти'} />
       <h2 className="mt-8 mb-10">Готові створити проект зі 100-річного дуба?</h2>
       <p className="pb-4">

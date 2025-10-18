@@ -34,26 +34,26 @@ export const Header = () => {
     <>
       <header
         className={`fixed flex items-center justify-between w-full px-4 py-5 z-[10] transition-all duration-300 ${
-          pathname !== "/gallery"
+          pathname !== "/gallery" && pathname !== "/contacts"
             ? isScrolled
               ? "bg-black/80 backdrop-blur-md"
               : "bg-transparent"
             : "bg-white"
         }`}
-        style={pathname !== "/gallery" ? {
+        style={pathname === "/gallery" || pathname === "/contacts" ? {
           boxShadow: "0px 2px 8px rgba(0, 0, 0, 0.08)",
         } : {}}
       >
         <Link href={"/"}>
           <Image
-            src={pathname !== "/gallery" ? Logo : LogoColoredBlack}
+            src={pathname !== "/gallery" && pathname !== "/contacts" ? Logo : LogoColoredBlack}
             alt="Invest Union logotype"
           />
         </Link>
 
         <button onClick={toggleMenu}>
           <Image
-            src={pathname !== "/gallery" ? Burger : BurgerBlack}
+            src={pathname !== "/gallery" && pathname !== "/contacts" ? Burger : BurgerBlack}
             alt="Burger menu icon"
           />
         </button>
