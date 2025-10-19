@@ -1,0 +1,1 @@
+export { SharedSwiper as default } from './ShareSwiper'

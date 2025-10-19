@@ -14,6 +14,7 @@ import History from "@/sections/AboutUsSections/History";
 import TeamValues from "@/sections/AboutUsSections/TeamValues";
 import ProductionPower from "@/sections/AboutUsSections/ProductionPower";
 import Gallery from "@/sections/GallerySections/Gallery";
+import News from "@/sections/NewsSections/News";
 
 export {
   HomeHero,
@@ -32,4 +33,5 @@ export {
   TeamValues,
   ProductionPower,
   Gallery,
+  News,
 };
