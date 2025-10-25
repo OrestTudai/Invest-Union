@@ -1,1 +1,1 @@
-export { SharedSwiper as default } from './ShareSwiper'
+export { SharedSwiper as default } from './SharedSwiper'

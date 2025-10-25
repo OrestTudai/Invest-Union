@@ -31,6 +31,7 @@ import GalleryEighthImage from './gallery-eighth-image.png'
 import GalleryNinethImage from './gallery-nineth-image.png'
 import GalleryTenthImage from './gallery-tenth-image.png'
 import GalleryEleventhImage from './gallery-image-eleventh.png'
+import ArrowSwiperButton from './arrow-swiper-button.svg'
 
 export {
   HomeHeroBgSm,
@@ -66,4 +67,5 @@ export {
   GalleryNinethImage,
   GalleryTenthImage,
   GalleryEleventhImage,
+  ArrowSwiperButton,
 }
