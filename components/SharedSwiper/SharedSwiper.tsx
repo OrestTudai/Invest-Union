@@ -63,7 +63,7 @@ export const SharedSwiper: React.FC<SharedSwiperProps> = ({
       <div className="flex justify-between items-center mt-6">
         {href && linkText && (
           <Link
-            className="w-fit px-8 py-4 text-[14px] text-green border-[1px] border-green rounded-[2px] border-[1px]"
+            className="w-fit px-8 py-4 text-[14px] text-green border-[1px] border-green rounded-[2px]"
             href={href}
           >
             {linkText}
