@@ -4,12 +4,12 @@ import ReasonCard from "@/sections/HomePageSections/WhyInvestUnionIsLeader/compo
 
 export const WhyInvestUnionIsLeader = () => {
   return (
-    <section className="pb-[100px]">
-      <div className="px-4">
+    <section className="pb-[100px] md:pb-[180px]">
+      <div className="px-4 md:px-10">
         <SectionName heading={'Переваги'} postsCount={'(04)'} />
-        <h2 className="mt-8 mb-10">Що робить Invest-Union <span className="text-green">лідером галузі</span></h2>
+        <h2 className="mt-8 mb-10 md:mt-10 md:mb-[60px]">Що робить Invest-Union <span className="text-green">лідером галузі</span></h2>
       </div>
-      <div className="flex flex-col gap-[1px]">
+      <div className="flex flex-col gap-[1px] md:grid md:grid-cols-2">
         {ReasonsData.map(reason => (
           <ReasonCard
             key={reason.heading}

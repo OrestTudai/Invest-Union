@@ -1,4 +1,4 @@
-const NewsItemsData = [
+export const NewsItemsData = [
   {
     heading: "Ullamcorper natoque viverra porttitor arcu tortor.",
     paragraph:

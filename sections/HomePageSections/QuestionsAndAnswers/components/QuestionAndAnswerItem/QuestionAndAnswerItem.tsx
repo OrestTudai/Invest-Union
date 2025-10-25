@@ -7,9 +7,10 @@ import Image from "next/image";
 type Props = {
   heading: string;
   paragraph: string;
+  index: number;
 };
 
-export const QuestionAndAnswerItem = ({ heading, paragraph }: Props) => {
+export const QuestionAndAnswerItem = ({ heading, paragraph, index }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

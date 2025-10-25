@@ -49,3 +49,32 @@ p {
   font-size: 16px;
   line-height: 124%;
 }
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 52px;
+    line-height: 112%;
+  }
+
+  h2 {
+    font-size: 48px;
+    line-height: 124%;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 32px;
+    line-height: 120%;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 124%;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 124%;
+  }
+}

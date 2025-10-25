@@ -29,12 +29,13 @@ export const Header = () => {
   }, [isMenuOpen]);
 
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+  const shouldNotBeWhite = pathname !== "/gallery" && pathname !== "/contacts" && pathname !== "/news";
 
   return (
     <>
       <header
-        className={`fixed flex items-center justify-between w-full px-4 py-5 z-[10] transition-all duration-300 ${
-          pathname !== "/gallery" && pathname !== "/contacts" && pathname !== "/news"
+        className={`fixed flex items-center justify-between w-full px-4 py-5 z-[10] transition-all duration-300 md:px-10 md:py-6 ${
+          shouldNotBeWhite
             ? isScrolled
               ? "bg-black/80 backdrop-blur-md"
               : "bg-transparent"
@@ -46,17 +47,23 @@ export const Header = () => {
       >
         <Link href={"/"}>
           <Image
-            src={pathname !== "/gallery" && pathname !== "/contacts" && pathname !== "/news" ? Logo : LogoColoredBlack}
+            src={shouldNotBeWhite ? Logo : LogoColoredBlack}
             alt="Invest Union logotype"
           />
         </Link>
-
-        <button onClick={toggleMenu}>
-          <Image
-            src={pathname !== "/gallery" && pathname !== "/contacts" && pathname !== "/news" ? Burger : BurgerBlack}
-            alt="Burger menu icon"
-          />
-        </button>
+        <div className="flex items-center gap-10">
+          <div className="hidden md:flex items-center gap-1">
+            <button className={`p-2 uppercase ${shouldNotBeWhite ? 'text-white' : 'text-darkGray'}`}>ua</button>
+            <div className={`h-6 w-[1px] ${shouldNotBeWhite ? 'bg-white' : 'bg-darkGray'}`} />
+            <button className="p-2 uppercase text-gray">en</button>
+          </div>
+          <button onClick={toggleMenu}>
+            <Image
+              src={shouldNotBeWhite ? Burger : BurgerBlack}
+              alt="Burger menu icon"
+            />
+          </button>
+        </div>
       </header>
 
       {isMenuOpen && <BurgerMenu toggleMenu={toggleMenu} />}

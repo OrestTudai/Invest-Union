@@ -60,7 +60,7 @@ export const SharedSwiper: React.FC<SharedSwiperProps> = ({
         ))}
       </Swiper>
 
-      <div className="flex justify-between items-center mt-6">
+      <div className="flex justify-between items-center mt-6 md:mt-10">
         {href && linkText && (
           <Link
             className="w-fit px-8 py-4 text-[14px] text-green border-[1px] border-green rounded-[2px]"
@@ -69,7 +69,7 @@ export const SharedSwiper: React.FC<SharedSwiperProps> = ({
             {linkText}
           </Link>
         )}
-        <div className="flex gap-4 w-fit ml-auto">
+        <div className="flex items-center gap-4 w-fit">
           <button
             ref={prevRef}
             disabled={isPrevDisabled}
