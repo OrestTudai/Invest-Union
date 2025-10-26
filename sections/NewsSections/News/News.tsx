@@ -10,7 +10,7 @@ export const News = () => {
         <span className="text-[14px] font-medium">(25)</span>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 md:gap-x-5 md:gap-y-8">
         {NewsItemsData.map((item, index) => (
           <NewsCard
             key={index}

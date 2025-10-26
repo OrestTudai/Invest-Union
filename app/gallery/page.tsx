@@ -5,7 +5,9 @@ export default function GalleryPage() {
     <>
       <Gallery />
       <DevelopBusiness />
-      <Contacts hasPaddingTop />
+      <section className="md:pt-[180px]">
+        <Contacts hasPaddingTop />
+      </section>
     </>
   )
 }
