@@ -5,6 +5,7 @@ import LogoColored from './logo-colored.svg'
 import ArrowTop from './arrow-top.svg'
 import PlayIcon from './play-icon.svg'
 import ArrowRight from './arrow-right.svg'
+import ArrowRightMd from './arrow-right-md.svg'
 import CrossIcon from './cross-icon.svg'
 import Mail from './mail.svg'
 import Phone from './phone.svg'
@@ -19,6 +20,7 @@ export {
   ArrowTop,
   PlayIcon,
   ArrowRight,
+  ArrowRightMd,
   CrossIcon,
   Mail,
   Phone,

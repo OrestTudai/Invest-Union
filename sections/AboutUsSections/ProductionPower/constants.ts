@@ -37,8 +37,4 @@ export const ProductionPowerData = [
     image: ProductionPowerSixthSm,
     paragraph: 'Ullamcorper natoque viverra porttitor arcu tortor.'
   },
-  {
-    image: ProductionPowerFirstSm,
-    paragraph: 'Ullamcorper natoque viverra porttitor arcu tortor.'
-  },
 ]
