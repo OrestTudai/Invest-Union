@@ -34,7 +34,7 @@ export const Header = () => {
   return (
     <>
       <header
-        className={`fixed flex items-center justify-between w-full px-4 py-5 z-[10] transition-all duration-300 md:px-10 md:py-6 ${
+        className={`fixed flex items-center justify-between w-full px-4 py-5 z-[10] transition-all duration-300 md:px-10 md:py-6 xl:py-[28px] ${
           shouldNotBeWhite
             ? isScrolled
               ? "bg-black/80 backdrop-blur-md"
@@ -52,12 +52,54 @@ export const Header = () => {
           />
         </Link>
         <div className="flex items-center gap-10">
+          <ul className="hidden xl:flex gap-5 text-[16px] text-white">
+            <li>
+              <Link
+                className={`w-fit py-2 px-2 ${pathname === "/" && "text-green"}`}
+                href="/"
+              >
+                Головна
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={`w-fit py-2 px-2 ${pathname === "/about-us" && "text-green"}`}
+                href="/about-us"
+              >
+                Про нас
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={`w-fit py-2 px-2 ${pathname === "/gallery" && "text-green"}`}
+                href="/gallery"
+              >
+                Галерея
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={`w-fit py-2 px-2 ${pathname === "/news" && "text-green"}`}
+                href="/news"
+              >
+                Новини
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={`w-fit py-2 px-2 ${pathname === "/contacts" && "text-green"}`}
+                href="/contacts"
+              >
+                Контакти
+              </Link>
+            </li>
+          </ul>
           <div className="hidden md:flex items-center gap-1">
             <button className={`p-2 uppercase ${shouldNotBeWhite ? 'text-white' : 'text-darkGray'}`}>ua</button>
             <div className={`h-6 w-[1px] ${shouldNotBeWhite ? 'bg-white' : 'bg-darkGray'}`} />
             <button className="p-2 uppercase text-gray">en</button>
           </div>
-          <button onClick={toggleMenu}>
+          <button className="xl:hidden" onClick={toggleMenu}>
             <Image
               src={shouldNotBeWhite ? Burger : BurgerBlack}
               alt="Burger menu icon"

@@ -10,7 +10,7 @@ type Props = {
 export const NewsCard = ({ heading, paragraph }: Props) => {
   return (
     <div className="flex flex-col gap-4">
-      <div className="relative w-full h-[340px] bg-[#565656]">
+      <div className="relative w-full h-[340px] bg-[#565656] xl:h-[400px]">
         <Link
           className="absolute bottom-4 right-4 p-3 border-solid border-[1px] rounded-[2px] border-[#FFFFFF] bg-[#FFFFFF14]"
           href="/news"

@@ -31,7 +31,7 @@ export const SharedSwiper: React.FC<SharedSwiperProps> = ({
   const [isNextDisabled, setIsNextDisabled] = useState(false);
 
   return (
-    <section>
+    <section className="block xl:flex xl:flex-row-reverse xl:max-w-[1100px] xl:gap-5">
       <Swiper
         modules={[Navigation]}
         spaceBetween={spaceBetween}
@@ -60,7 +60,7 @@ export const SharedSwiper: React.FC<SharedSwiperProps> = ({
         ))}
       </Swiper>
 
-      <div className="flex justify-between items-center mt-6 md:mt-10">
+      <div className="flex justify-between items-center mt-6 md:mt-10 xl:justify-end xl:items-end">
         {href && linkText && (
           <Link
             className="w-fit px-8 py-4 text-[14px] text-green border-[1px] border-green rounded-[2px]"
@@ -69,7 +69,7 @@ export const SharedSwiper: React.FC<SharedSwiperProps> = ({
             {linkText}
           </Link>
         )}
-        <div className="flex items-center gap-4 w-fit">
+        <div className="flex items-center gap-4 w-fit xl:min-w-[120px]">
           <button
             ref={prevRef}
             disabled={isPrevDisabled}
