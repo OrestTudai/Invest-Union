@@ -14,7 +14,7 @@ export const MoreThanJustWood = () => {
         postsCount={'(25+)'}
       />
       <h2 className="mt-8 mb-10 md:mt-10 md:mb-[60px] xl:hidden">Щось більше <br /> ніж просто <span className="text-green">дерево</span></h2>
-      <div className="flex flex-col gap-6 mb-6 md:grid md:grid-cols-2 md:gap-y-8 md:gap-x-5 md:mb-10 xl:mt-20">
+      <div className="flex flex-col gap-6 mb-6 md:grid md:grid-cols-2 md:gap-y-8 md:gap-x-5 md:mb-10 xl:mt-20 xl:hidden">
         {MoreThanJustWoodData.map((item, index) => (
           <MoreThanJustWoodCard
             paragraph={item.paragraph}
@@ -22,6 +22,9 @@ export const MoreThanJustWood = () => {
             key={`more-than-just-wood-${index}`}
           />
         ))}
+      </div>
+      <div>
+
       </div>
       <div className="md:max-w-[305px] md:mx-auto">
         <GreenButton buttonType={ButtonType.Outlined} buttonText={'Переглянути всю галерею'} />

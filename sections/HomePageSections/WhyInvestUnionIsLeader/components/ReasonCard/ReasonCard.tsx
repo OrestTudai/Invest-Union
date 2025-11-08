@@ -14,11 +14,9 @@ export const ReasonCard = ({ heading, paragraph, image }: Props) => {
                  md:bg-center xl:py-[188px] xl:px-8 xl:min-h-[520px]"
       style={{ backgroundImage: `url(${image.src})` }}
     >
-      {/* Dark overlay on hover (XL only) */}
       <div className="absolute inset-0 bg-black/20 xl:group-hover:bg-black/50 transition-colors duration-500 hidden xl:block" />
 
       <div className="relative z-10 flex flex-col items-center">
-        {/* Heading — always visible, moves on hover for XL */}
         <h3
           className="mb-6 text-2xl font-semibold
                      xl:transition-transform xl:duration-700 xl:ease-out

@@ -14,7 +14,7 @@ export const AboutInvestUnion = () => {
       </div>
       <div className="flex flex-col md:flex-row md:gap-5 xl:gap-0">
         <Image className="md:w-[207px] md:h-[221px] xl:w-[322px] xl:h-[206px]" src={AboutInvestUnionWood} alt={'About Invest Union wood picture'} />
-        <p className="xl:block max-w-[440px] ml-auto">
+        <p className="hidden xl:block max-w-[440px] ml-auto">
           Morbi morbi arcu neque volutpat in. A lorem aliquam id pulvinar enim ac lectus pretium. Elit ante enim lectus scelerisque sit vestibulum. Dignissim morbi mi proin egestas ac ultrices varius.
           Urna quam elementum scelerisque purus elit fermentum nulla. Arcu et ultricies purus feugiat duis faucibus nunc. Gravida urna urna sagittis amet pellentesque euismod pellentesque amet. Facilisi egestas in dictum gravida at tincidunt.
         </p>

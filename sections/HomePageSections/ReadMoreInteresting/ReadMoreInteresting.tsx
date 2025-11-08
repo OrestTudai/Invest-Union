@@ -4,10 +4,10 @@ import {ButtonType} from "@/components/GreenButton";
 
 export const ReadMoreInteresting = () => {
   return (
-    <section className="pb-[100px] px-4 md:pb-[180px] md:px-10 xl:py-[200px]">
+    <section className="pb-[100px] px-4 md:pb-[180px] md:px-10 xl:pb-[200px]">
       <SectionName
         sectionName={
-          <h2 className="mt-8 mb-10 md:mt-10 md:mb-[60px]">
+          <h2 className="hidden mb-10 md:mb-20 xl:block">
             Читайте <br className="hidden md:block" /> ще більше <br className="md:hidden" />цікавого
           </h2>
         }
@@ -44,9 +44,9 @@ export const ReadMoreInteresting = () => {
           ))}
         />
       </div>
-      <div className="hidden items-center justify-center gap-5 xl:flex">
+      <div className="hidden grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 md:gap-x-5 md:gap-y-8 xl:grid">
         {ReadMoreInterestingData.slice(0, 3).map((readMore, index) => (
-          <div key={`read-more-slide-${index}`} className="max-w-[440px]">
+          <div key={`read-more-slide-${index}`}>
             <NewsCard
               heading={readMore.heading}
               paragraph={readMore.paragraph}

@@ -9,7 +9,7 @@ export const Footer = () => {
       <div className="flex flex-col gap-10 xl:hidden">
         <div className="flex justify-between items-center">
           <Image src={LogoColored} alt={'Invest Union colored logotype'} />
-          <p className="md:!text-[20px]">1901 Thornridge Cir. Shiloh, <br/>Hawaii 81063</p>
+          <p className="hidden md:!text-[20px] md:block">1901 Thornridge Cir. Shiloh, <br/>Hawaii 81063</p>
           <GoToTopButton />
         </div>
         <p className="md:hidden">1901 Thornridge Cir. Shiloh, <br/>Hawaii 81063</p>

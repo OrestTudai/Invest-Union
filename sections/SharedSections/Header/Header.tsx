@@ -34,7 +34,7 @@ export const Header = () => {
   return (
     <>
       <header
-        className={`fixed flex items-center justify-between w-full px-4 py-5 z-[10] transition-all duration-300 md:px-10 md:py-6 xl:py-[28px] ${
+        className={`fixed flex items-center justify-between w-full px-4 py-5 z-[20] transition-all duration-300 md:px-10 md:py-6 xl:py-[28px] ${
           shouldNotBeWhite
             ? isScrolled
               ? "bg-black/80 backdrop-blur-md"
@@ -52,7 +52,7 @@ export const Header = () => {
           />
         </Link>
         <div className="flex items-center gap-10">
-          <ul className="hidden xl:flex gap-5 text-[16px] text-white">
+          <ul className={`hidden xl:flex gap-5 text-[16px] ${shouldNotBeWhite && 'text-white'}`}>
             <li>
               <Link
                 className={`w-fit py-2 px-2 ${pathname === "/" && "text-green"}`}

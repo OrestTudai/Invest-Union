@@ -15,10 +15,10 @@ export const WhyInvestUnionIsLeader = () => {
           heading={'Переваги'}
           postsCount={'(04)'}
         />
+        <h2 className="mt-8 mb-10 md:mt-10 md:mb-[60px] xl:hidden">
+          Що робить Invest-Union <span className="text-green">лідером галузі</span>
+        </h2>
       </div>
-      <h2 className="mt-8 mb-10 md:mt-10 md:mb-[60px] xl:hidden">
-        Що робить Invest-Union <span className="text-green">лідером галузі</span>
-      </h2>
       <div className="flex flex-col gap-[1px] md:grid md:grid-cols-2 xl:flex xl:flex-row xl:mt-20">
         {ReasonsData.map(reason => (
           <ReasonCard
