@@ -2,6 +2,7 @@ import {HomeHeroBgSm, WatchVideoButtonBgMd, WatchVideoButtonBgSm, WatchVideoButt
 import Image from "next/image";
 import {PlayIcon} from "@/assets/svg";
 import {SectionContainer} from "@/components";
+import {ShowVideoButton} from "@/sections/HomePageSections/HomeHero/components";
 
 export const HomeHero = () => {
   return (
@@ -11,19 +12,8 @@ export const HomeHero = () => {
     >
       <SectionContainer>
         <div className="flex justify-between xl:justify-start">
-          <h1 className="text-[65px]! px-4 mt-[194px] md:mt-[253px] md:!text-[98px] md:px-0">Invest<br />Union</h1>
-          <button className="flex flex-col justify-end items-center h-[390px] w-[95px] gap-20 pb-8 bg-cover md:hidden" style={{ backgroundImage: `url(${WatchVideoButtonBgSm.src})` }}>
-            <span className="block rotate-[-90deg] text-nowrap opacity-70">Дивитись відео</span>
-            <Image src={PlayIcon} alt={'Play icon'} />
-          </button>
-          <button className="hidden md:flex flex-col justify-end items-center h-[330px] w-[95px] gap-20 pb-8 bg-cover mt-[130px] xl:hidden" style={{ backgroundImage: `url(${WatchVideoButtonBgMd.src})` }}>
-            <span className="block rotate-[-90deg] text-nowrap opacity-70">Дивитись відео</span>
-            <Image src={PlayIcon} alt={'Play icon'} />
-          </button>
-          <button className="hidden flex-col ml-[220px] justify-end items-center h-[475px] w-[95px] gap-20 pb-8 bg-cover xl:flex" style={{ backgroundImage: `url(${WatchVideoButtonBgXl.src})` }}>
-            <span className="block rotate-[-90deg] text-nowrap opacity-70">Дивитись відео</span>
-            <Image src={PlayIcon} alt={'Play icon'} />
-          </button>
+          <h1 className="font-libre! text-[65px]! px-4 mt-[194px] md:mt-[253px] md:!text-[98px] md:px-0">Invest<br />Union</h1>
+          <ShowVideoButton />
           <p className="hidden ml-auto px-4 mt-[45px] leading-[100%] md:px-0 md:mt-10 md:!text-[52px] xl:block xl:mt-[253px]">
             Відроджений матеріал <br className="hidden md:block" />для довговічних рішень: <br />
             <span className="font-medium">амбарна деревина</span>

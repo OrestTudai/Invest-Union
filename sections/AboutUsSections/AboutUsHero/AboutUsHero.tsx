@@ -10,10 +10,10 @@ export const AboutUsHero = () => {
       style={{ backgroundImage: `url(${AboutUsInvestUnionWoodBg.src})` }}
     >
       <SectionContainer className="flex flex-col items-center pt-[260px] pb-12 px-4 md:px-10 md:pt-[520px] md:pb-[100px] xl:pt-[322px]">
-        <h1 className="text-center text-[#F5F5F5] !text-[90px] leading-none md:hidden">
+        <h1 className="font-libre text-center text-[#F5F5F5] !text-[90px] leading-none md:hidden">
           Invest Union
         </h1>
-        <h1 className="hidden text-center text-[#F5F5F5] !text-[98px] leading-none md:block">
+        <h1 className="hidden font-libre text-center text-[#F5F5F5] !text-[98px] leading-none md:block">
           Invest-Union
         </h1>
 
