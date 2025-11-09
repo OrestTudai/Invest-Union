@@ -1,8 +1,6 @@
 import {HomeHeroBgSm} from "@/assets/images";
 import {SectionContainer} from "@/components";
 import {ShowVideoButton} from "@/sections/HomePageSections/HomeHero/components";
-import {SectionContainer} from "@/components";
-import {ShowVideoButton} from "@/sections/HomePageSections/HomeHero/components";
 
 export const HomeHero = () => {
   return (
