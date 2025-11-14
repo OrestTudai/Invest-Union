@@ -36,7 +36,6 @@ export const Header = () => {
   const locale = useLocale()
   const router = useRouter();
   const params = useParams();
-  console.log({ locale })
 
   const changeLocale = (locale: string) => {
     router.replace(

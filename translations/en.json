@@ -1,101 +1,101 @@
 {
   "about": {
-    "title": "Про нас / Про Invest Union",
-    "text": "Ми — єдині в Україні виробники тришарової меблевої панелі з амбарного дуба та хвойних порід, що відповідає європейським стандартам. Наша місія — перетворювати відновлену деревину на довговічні рішення для унікальних інтер’єрів. Ми поєднуємо столітню історію дерева з сучасними технологіями, щоб створювати матеріали, які надихають архітекторів, дизайнерів та виробників меблів. Кожна панель — це не просто конструктивний елемент, а частина естетики, що передає характер простору. Відбір сировини, сушіння, склеювання та фінішна обробка — усе відбувається під нашим контролем, щоб гарантувати стабільність, екологічність і бездоганний вигляд. Ми не просто виробляємо деревину — ми створюємо основу для ідей, які живуть десятиліттями."
+    "title": "About Us / About Invest Union",
+    "text": "We are the only manufacturer in Ukraine producing three-layer furniture panels from reclaimed oak and coniferous species that meet European standards. Our mission is to transform reclaimed wood into durable solutions for unique interiors. We combine the centuries-old history of wood with modern technologies to create materials that inspire architects, designers, and furniture makers. Each panel is not just a structural element but a part of the aesthetics that conveys the character of the space. Selection of raw materials, drying, gluing, and finishing — everything is under our control to ensure stability, sustainability, and a flawless appearance. We don’t just produce wood — we create the foundation for ideas that live for decades."
   },
 
   "advantages": {
-    "title": "Переваги",
+    "title": "Advantages",
     "items": {
       "eco": {
-        "title": "Екологічність",
-        "text": "Ми працюємо виключно з відновленою деревиною, зберігаючи природні ресурси та зменшуючи вплив на довкілля."
+        "title": "Eco-friendliness",
+        "text": "We work exclusively with reclaimed wood, preserving natural resources and reducing environmental impact."
       },
       "quality": {
-        "title": "Якість і довговічність",
-        "text": "Наші панелі проходять багаторівневу обробку, що гарантує стабільність форми та естетичну витривалість на роки."
+        "title": "Quality and Durability",
+        "text": "Our panels undergo multi-stage processing, ensuring shape stability and long-lasting aesthetics."
       },
       "recycling": {
-        "title": "Вторинна переробка",
-        "text": "Ми даємо нове життя столітній деревині, поєднуючи автентичність із сучасними технологіями."
+        "title": "Recycling",
+        "text": "We give new life to century-old wood, combining authenticity with modern technologies."
       },
       "international": {
-        "title": "Міжнародний досвід",
-        "text": "Наші рішення вже використовують дизайнери та архітектори в Європі."
+        "title": "International Experience",
+        "text": "Our solutions are already used by designers and architects across Europe."
       }
     }
   },
 
   "testimonials": {
-    "title": "Відгуки клієнтів",
+    "title": "Client Testimonials",
     "list": [
-      "Ми обрали Invest Union за їхню увагу до деталей та справжню автентичність матеріалу. Панелі з амбарного дуба стали ключовим елементом нашого інтер’єру.",
-      "Ми шукали матеріал, який би поєднував автентичність і стабільність — і знайшли його в панелях Invest Union. Їхня текстура додає глибини простору, а якість не викликає жодних сумнівів.",
-      "Панелі з амбарного дуба стали справжньою знахідкою для нашого проєкту. Клієнти відразу звертають увагу на фактуру дерева — вона говорить сама за себе. Працювати з таким матеріалом — одне задоволення."
+      "We chose Invest Union for their attention to detail and the true authenticity of the material. Reclaimed oak panels became the key element of our interior.",
+      "We were looking for a material that would combine authenticity and stability — and we found it in Invest Union panels. Their texture adds depth to the space, and the quality leaves no doubt.",
+      "Reclaimed oak panels turned out to be a real discovery for our project. Clients immediately notice the wood’s texture — it speaks for itself. Working with such material is pure pleasure."
     ]
   },
 
   "faq": {
-    "title": "Питання-відповіді",
+    "title": "FAQ",
     "items": [
       {
-        "question": "Яка товщина тришарової панелі?",
-        "answer": "Стандартна товщина становить 20 мм, але можливе індивідуальне замовлення."
+        "question": "What is the thickness of the three-layer panel?",
+        "answer": "The standard thickness is 20 mm, but custom orders are possible."
       },
       {
-        "question": "Які породи деревини ви використовуєте для панелей?",
-        "answer": "Ми працюємо з амбарним дубом, а також із хвойними породами — зокрема сосною та ялицею. Уся деревина проходить ретельний відбір і сушіння."
+        "question": "What types of wood do you use for panels?",
+        "answer": "We work with reclaimed oak as well as coniferous species, particularly pine and fir. All wood undergoes careful selection and drying."
       },
       {
-        "question": "Чи можна замовити панелі нестандартного розміру?",
-        "answer": "Так, ми виготовляємо панелі під індивідуальні розміри згідно з технічним завданням клієнта."
+        "question": "Can I order panels of non-standard size?",
+        "answer": "Yes, we manufacture panels according to individual dimensions specified by the client."
       },
       {
-        "question": "Чи підходять ваші панелі для підлогового покриття?",
-        "answer": "Наші панелі призначені як і для меблевого виробництва та оздоблення стін, так і для підлог. Для підлог ми рекомендуємо спеціалізовані рішення."
+        "question": "Are your panels suitable for flooring?",
+        "answer": "Our panels are intended for furniture production and wall finishing, as well as flooring. For floors, we recommend specialized solutions."
       },
       {
-        "question": "Чи можна побачити зразки перед замовленням?",
-        "answer": "Звісно. Ми надаємо зразки деревини, щоб ви могли оцінити текстуру, колір і якість матеріалу перед прийняттям рішення."
+        "question": "Can I see samples before ordering?",
+        "answer": "Of course. We provide wood samples so you can evaluate texture, color, and quality before making a decision."
       }
     ]
   },
 
   "aboutPage": {
     "history": {
-      "title": "Наша історія",
-      "text": "Все почалося з ідеї дати нове життя деревині, яка вже пережила століття. Ми побачили красу в амбарних дошках, що зберегли сліди часу, і вирішили перетворити їх на щось більше, ніж просто матеріал — на основу для унікальних інтер’єрів.\n\nЗ невеликої майстерні ми виросли у виробництво, яке сьогодні єдине в Україні виготовляє тришарові меблеві панелі з амбарного дуба та хвойних порід. Ми поєднали ремесло з технологіями, щоб створювати стабільні, екологічні та естетично довершені рішення для дизайнерів, архітекторів і меблевих майстрів.\n\nКожна панель — це результат уважного відбору, сушіння, склеювання та фінішної обробки. Ми не просто працюємо з деревом — ми зберігаємо його історію, щоб вона жила у нових просторах."
+      "title": "Our History",
+      "text": "It all began with the idea of giving new life to wood that had already lived for centuries. We saw beauty in barn boards that preserved traces of time and decided to turn them into something more than just material — into the foundation for unique interiors.\n\nFrom a small workshop, we grew into a production facility that today is the only one in Ukraine manufacturing three-layer furniture panels from reclaimed oak and coniferous species. We combined craftsmanship with technology to create stable, ecological, and aesthetically refined solutions for designers, architects, and furniture makers.\n\nEvery panel is the result of careful selection, drying, gluing, and finishing. We don’t just work with wood — we preserve its history so it can live on in new spaces."
     }
   },
 
   "values": {
-    "title": "Цінності команди Invest Union",
+    "title": "Team Values of Invest Union",
     "items": {
       "honesty": {
-        "title": "Чесність та прозорість",
-        "text": "Ми відкриті у всьому — від походження деревини до умов співпраці. Прозорість процесів і чесність у комунікації — основа нашої репутації."
+        "title": "Honesty and Transparency",
+        "text": "We are open in everything — from the origin of the wood to the terms of cooperation. Transparency in processes and honesty in communication are the foundation of our reputation."
       },
       "development": {
-        "title": "Постійний розвиток",
-        "text": "Ми вдосконалюємо технології, розширюємо асортимент і навчаємося щодня. Наше виробництво — це не застигла система, а живий організм, що росте разом із запитами ринку."
+        "title": "Continuous Development",
+        "text": "We constantly improve our technologies, expand our product range, and learn every day. Our production is not a static system but a living organism that grows together with market demands."
       },
       "openness": {
-        "title": "Відкритість до нового",
-        "text": "Ми не боїмося експериментів. Нові формати, нестандартні запити, індивідуальні рішення — це виклики, які ми приймаємо з ентузіазмом."
+        "title": "Openness to Innovation",
+        "text": "We are not afraid of experiments. New formats, unconventional requests, and customized solutions are challenges we embrace with enthusiasm."
       },
       "responsibility": {
-        "title": "Відповідальність",
-        "text": "Ми відповідаємо за якість кожної панелі, за екологічність процесів і за дотримання домовленостей. Надійність — не просто слово, а принцип роботи."
+        "title": "Responsibility",
+        "text": "We take responsibility for the quality of every panel, for the ecological sustainability of our processes, and for keeping our commitments. Reliability is not just a word — it is our principle of work."
       },
       "clients": {
-        "title": "Клієнти — це партнери",
-        "text": "Ми не просто постачаємо матеріал — ми співпрацюємо. Кожен клієнт для нас — це партнер, з яким ми створюємо довготривалі рішення, що мають цінність і сенс."
+        "title": "Clients Are Partners",
+        "text": "We don’t just supply material — we collaborate. Every client is a partner with whom we create long-term solutions that carry value and meaning."
       }
     }
   },
 
   "footer": {
-    "address": "Україна, Львівська обл., м. Перемишляни, вул. Боршівська 46а, індекс 81200",
+    "address": "81200, Ukraine, Lviv region, Peremyshlyany city, Borshivska street 46",
     "phone": "+380 67 682 5522"
   }
 }
