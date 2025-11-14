@@ -5,8 +5,10 @@ import { Burger, BurgerBlack, Logo, LogoColoredBlack } from "@/assets/svg";
 import Image from "next/image";
 import Link from "next/link";
 import BurgerMenu from "@/sections/SharedSections/Header/components/BurgerMenu";
-import { usePathname } from "next/navigation";
+import {useParams} from "next/navigation";
 import {SectionContainer} from "@/components";
+import {useLocale} from "use-intl";
+import {usePathname, useRouter} from '@/i18n/navigation';
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,6 +33,18 @@ export const Header = () => {
 
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
   const shouldNotBeWhite = pathname !== "/gallery" && pathname !== "/contacts" && pathname !== "/news";
+  const locale = useLocale()
+  const router = useRouter();
+  const params = useParams();
+  console.log({ locale })
+
+  const changeLocale = (locale: string) => {
+    router.replace(
+      // @ts-expect-error -- TypeScript will validate that only known `params`
+      {pathname, params},
+      {locale}
+    );
+  }
 
   return (
     <>
@@ -47,7 +61,7 @@ export const Header = () => {
         } : {}}
       >
         <SectionContainer className="flex items-center justify-between">
-          <Link href={"/"}>
+          <Link href={`/${locale}`}>
             <Image
               src={shouldNotBeWhite ? Logo : LogoColoredBlack}
               alt="Invest Union logotype"
@@ -58,7 +72,7 @@ export const Header = () => {
               <li>
                 <Link
                   className={`w-fit py-2 px-2 ${pathname === "/" && "text-green"}`}
-                  href="/"
+                  href={`/${locale}`}
                 >
                   Головна
                 </Link>
@@ -66,7 +80,7 @@ export const Header = () => {
               <li>
                 <Link
                   className={`w-fit py-2 px-2 ${pathname === "/about-us" && "text-green"}`}
-                  href="/about-us"
+                  href={`/${locale}/about-us`}
                 >
                   Про нас
                 </Link>
@@ -74,7 +88,7 @@ export const Header = () => {
               <li>
                 <Link
                   className={`w-fit py-2 px-2 ${pathname === "/gallery" && "text-green"}`}
-                  href="/gallery"
+                  href={`/${locale}/gallery`}
                 >
                   Галерея
                 </Link>
@@ -82,7 +96,7 @@ export const Header = () => {
               <li>
                 <Link
                   className={`w-fit py-2 px-2 ${pathname === "/news" && "text-green"}`}
-                  href="/news"
+                  href={`/${locale}/news`}
                 >
                   Новини
                 </Link>
@@ -90,16 +104,26 @@ export const Header = () => {
               <li>
                 <Link
                   className={`w-fit py-2 px-2 ${pathname === "/contacts" && "text-green"}`}
-                  href="/contacts"
+                  href={`/${locale}/contacts`}
                 >
                   Контакти
                 </Link>
               </li>
             </ul>
             <div className="hidden md:flex items-center gap-1">
-              <button className={`p-2 uppercase ${shouldNotBeWhite ? 'text-white' : 'text-darkGray'}`}>ua</button>
+              <button
+                onClick={() => changeLocale('uk')}
+                className={`p-2 uppercase ${shouldNotBeWhite ? 'text-white' : 'text-darkGray'}`}
+              >
+                ua
+              </button>
               <div className={`h-6 w-[1px] ${shouldNotBeWhite ? 'bg-white' : 'bg-darkGray'}`} />
-              <button className="p-2 uppercase text-gray">en</button>
+              <button
+                onClick={() => changeLocale('en')}
+                className="p-2 uppercase text-gray"
+              >
+                en
+              </button>
             </div>
             <button className="xl:hidden" onClick={toggleMenu}>
               <Image
