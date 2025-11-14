@@ -14,6 +14,9 @@ export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
+  const locale = useLocale()
+  const router = useRouter();
+  const params = useParams();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,9 +36,6 @@ export const Header = () => {
 
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
   const shouldNotBeWhite = pathname !== "/gallery" && pathname !== "/contacts" && pathname !== "/news";
-  const locale = useLocale()
-  const router = useRouter();
-  const params = useParams();
 
   const changeLocale = (locale: string) => {
     router.replace(
@@ -44,6 +44,8 @@ export const Header = () => {
       {locale}
     );
   }
+
+  console.log({ locale })
 
   return (
     <>

@@ -42,7 +42,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
     <body className={`${inter.variable} ${libreCaslon.variable} antialiased`}>
-    <NextIntlClientProvider>
+    <NextIntlClientProvider locale={locale}>
       <Header />
       {children}
       <Footer />
