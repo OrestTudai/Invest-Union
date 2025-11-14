@@ -17,7 +17,7 @@ export default function AboutUsPage() {
       <WhyInvestUnionIsLeader />
       <ProductionPower />
       <QuestionsAndAnswers />
-      <ReadMoreInteresting />
+      {/*<ReadMoreInteresting />*/}
       <Contacts />
     </>
   )

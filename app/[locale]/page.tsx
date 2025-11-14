@@ -17,7 +17,7 @@ export default function Home() {
       <CustomerReviews />
       <DevelopBusiness />
       <QuestionsAndAnswers />
-      <ReadMoreInteresting />
+      {/*<ReadMoreInteresting />*/}
       <Contacts />
     </>
   );

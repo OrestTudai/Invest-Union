@@ -45,7 +45,14 @@ export const Header = () => {
     );
   }
 
-  console.log({ locale })
+  const languageSelectorEnColor =
+    locale === 'en' ?
+      (shouldNotBeWhite ? 'text-white' : 'text-darkGray')
+      : 'text-gray'
+
+  const languageSelectorUkColor = locale === 'uk' ?
+    (shouldNotBeWhite ? 'text-white' : 'text-darkGray')
+    : 'text-gray'
 
   return (
     <>
@@ -94,14 +101,14 @@ export const Header = () => {
                   Галерея
                 </Link>
               </li>
-              <li>
-                <Link
-                  className={`w-fit py-2 px-2 ${pathname === "/news" && "text-green"}`}
-                  href={`/${locale}/news`}
-                >
-                  Новини
-                </Link>
-              </li>
+              {/*<li>*/}
+              {/*  <Link*/}
+              {/*    className={`w-fit py-2 px-2 ${pathname === "/news" && "text-green"}`}*/}
+              {/*    href={`/${locale}/news`}*/}
+              {/*  >*/}
+              {/*    Новини*/}
+              {/*  </Link>*/}
+              {/*</li>*/}
               <li>
                 <Link
                   className={`w-fit py-2 px-2 ${pathname === "/contacts" && "text-green"}`}
@@ -114,14 +121,14 @@ export const Header = () => {
             <div className="hidden md:flex items-center gap-1">
               <button
                 onClick={() => changeLocale('uk')}
-                className={`p-2 uppercase ${shouldNotBeWhite ? 'text-white' : 'text-darkGray'}`}
+                className={`p-2 uppercase ${languageSelectorUkColor}`}
               >
                 ua
               </button>
               <div className={`h-6 w-[1px] ${shouldNotBeWhite ? 'bg-white' : 'bg-darkGray'}`} />
               <button
                 onClick={() => changeLocale('en')}
-                className="p-2 uppercase text-gray"
+                className={`p-2 uppercase ${languageSelectorEnColor}`}
               >
                 en
               </button>
