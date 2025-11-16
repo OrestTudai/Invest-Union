@@ -9,7 +9,7 @@ type Props = {
 }
 
 export const AboutUsHero = async ({ locale }: Props) => {
-  const translations = await getTranslations({ locale, namespace: 'about' })
+  const translations = await getTranslations({ locale, namespace: 'historyHero' })
 
   return (
     <section
@@ -30,8 +30,7 @@ export const AboutUsHero = async ({ locale }: Props) => {
             textShadow: "3.94px 3.94px 7.87px rgba(0, 0, 0, 0.5)",
           }}
         >
-          Виробники трьохшарової меблевої панелі з старого, столітнього, амбарного
-          дуба та хвої за європейським стандартом
+          {translations('paragraph')}
         </h4>
 
         <Image

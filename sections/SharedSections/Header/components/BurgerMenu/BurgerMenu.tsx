@@ -97,12 +97,12 @@ export const BurgerMenu = ({ toggleMenu, locale, enSwitchClick, ukSwitchClick }:
       <div className="shrink-0 pt-10 pb-12 px-4 bg-black">
         <GreenButton
           buttonType={ButtonType.Filled}
-          buttonText="Обговорити співпрацю"
+          buttonText={translations('buttonText')}
         />
         <div className="flex items-start justify-between mt-10">
           <div className="flex flex-col gap-3">
             <span className="text-white underline">{translations('phone')}</span>
-            <span className="text-white">example@teamwebflow.com</span>
+            <span className="text-white">ltd.invest.union@gmail.com</span>
           </div>
           <div className="flex flex-col">
             <Link className="w-fit p-2 text-white" href="/">Facebook</Link>

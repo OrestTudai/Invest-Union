@@ -1,11 +1,33 @@
 {
-  "about": {
-    "title": "About Us / About Invest Union",
-    "text": "We are the only manufacturer in Ukraine producing three-layer furniture panels from reclaimed oak and coniferous species that meet European standards. Our mission is to transform reclaimed wood into durable solutions for unique interiors. We combine the centuries-old history of wood with modern technologies to create materials that inspire architects, designers, and furniture makers. Each panel is not just a structural element but a part of the aesthetics that conveys the character of the space. Selection of raw materials, drying, gluing, and finishing — everything is under our control to ensure stability, sustainability, and a flawless appearance. We don’t just produce wood — we create the foundation for ideas that live for decades."
+  "heroHome": {
+    "title": {
+      "line1": "Revived material",
+      "line2": "for durable solutions:",
+      "line3": "barn wood"
+    },
+    "buttonText": "Watch video",
+    "onlyOne": {
+      "line1": "The only ones in Ukraine",
+      "line2": "producers of three-layer furniture panels",
+      "line3": "made from reclaimed oak and pine to European standards"
+    }
   },
-
+  "about": {
+    "title": "About Invest Union",
+    "bigText": "We offer comprehensive solutions – from the production of three‑layer panels and furniture blanks to the creation of unique interiors from reclaimed wood",
+    "text": "We are the only manufacturer in Ukraine producing three-layer furniture panels from reclaimed oak and coniferous species that meet European standards. Our mission is to transform reclaimed wood into durable solutions for unique interiors. We combine the centuries-old history of wood with modern technologies to create materials that inspire architects, designers, and furniture makers. Each panel is not just a structural element but a part of the aesthetics that conveys the character of the space. Selection of raw materials, drying, gluing, and finishing — everything is under our control to ensure stability, sustainability, and a flawless appearance. We don’t just produce wood — we create the foundation for ideas that live for decades.",
+    "paragraphs": {
+      "paragraph1": "We are the only producers in Ukraine of three-layer furniture panels made from reclaimed oak and coniferous wood, compliant with European standards. Our mission is to transform reclaimed timber into durable solutions for unique interiors. We combine the centuries-old history of wood with modern technologies to create materials that inspire architects, designers, and furniture makers. Each panel is not just a structural element, but a piece of aesthetics that conveys the character of a space.",
+      "paragraph2": "Selection of raw materials, drying, gluing, and final finishing — everything is under our control to ensure stability, sustainability, and impeccable appearance. We do not simply produce wood — we create the foundation for ideas that live for decades."
+    },
+    "moreAboutUs": "More about us"
+  },
   "advantages": {
     "title": "Advantages",
+    "heading": {
+      "line1": "What makes Invest-Union",
+      "line2": "an industry leader"
+    },
     "items": {
       "eco": {
         "title": "Eco-friendliness",
@@ -26,17 +48,49 @@
     }
   },
 
+  "gallery": {
+    "title": "Gallery",
+    "heading": {
+      "line1": "Something more",
+      "line2": "than just",
+      "line3": "wood"
+    },
+    "watchAllGallery": "Watch all gallery"
+  },
+
   "testimonials": {
-    "title": "Client Testimonials",
-    "list": [
-      "We chose Invest Union for their attention to detail and the true authenticity of the material. Reclaimed oak panels became the key element of our interior.",
-      "We were looking for a material that would combine authenticity and stability — and we found it in Invest Union panels. Their texture adds depth to the space, and the quality leaves no doubt.",
-      "Reclaimed oak panels turned out to be a real discovery for our project. Clients immediately notice the wood’s texture — it speaks for itself. Working with such material is pure pleasure."
-    ]
+    "title": "Testimonials",
+    "heading": {
+      "line1": "What our",
+      "line2": "clients say"
+    },
+    "moreClients": {
+      "line1": "Over 90% of clients",
+      "line2": "recommend us.",
+      "line3": "And the remaining 10% just haven’t had the chance yet."
+    },
+    "list": {
+      "first": "We chose Invest Union for their attention to detail and the true authenticity of the material. Reclaimed oak panels became the key element of our interior.",
+      "second": "We were looking for a material that would combine authenticity and stability — and we found it in Invest Union panels. Their texture adds depth to the space, and the quality leaves no doubt.",
+      "third": "Reclaimed oak panels turned out to be a real discovery for our project. Clients immediately notice the wood’s texture — it speaks for itself. Working with such material is pure pleasure."
+    }
+  },
+
+  "developBusiness": {
+    "heading": {
+      "line1": "Grow your business",
+      "line2": "with INVEST-UNION"
+    },
+    "paragraph": "Reliable partnership for designers, architects, and manufacturers who choose quality",
+    "buttonText": "Discuss cooperation"
   },
 
   "faq": {
     "title": "FAQ",
+    "heading": {
+      "line1": "Answers to all",
+      "line2": "popular questions"
+    },
     "items": [
       {
         "question": "What is the thickness of the three-layer panel?",
@@ -61,12 +115,17 @@
     ]
   },
 
-  "aboutPage": {
-    "history": {
-      "title": "Our History",
-      "text": "It all began with the idea of giving new life to wood that had already lived for centuries. We saw beauty in barn boards that preserved traces of time and decided to turn them into something more than just material — into the foundation for unique interiors.\n\nFrom a small workshop, we grew into a production facility that today is the only one in Ukraine manufacturing three-layer furniture panels from reclaimed oak and coniferous species. We combined craftsmanship with technology to create stable, ecological, and aesthetically refined solutions for designers, architects, and furniture makers.\n\nEvery panel is the result of careful selection, drying, gluing, and finishing. We don’t just work with wood — we preserve its history so it can live on in new spaces."
-    }
+  "history": {
+    "title": "About Invest-Union",
+    "heading": "Our History",
+    "text_part_1": "It all began with the idea of giving new life to wood that had already lived for centuries. We saw beauty in barn boards that preserved traces of time and decided to turn them into something more than just material — into the foundation for unique interiors.\n\nFrom a small workshop, we grew into a production facility that today is the only one in Ukraine manufacturing three-layer furniture panels from reclaimed oak and coniferous species.",
+    "text_part_2": "We combined craftsmanship with technology to create stable, ecological, and aesthetically refined solutions for designers, architects, and furniture makers.\n\nEvery panel is the result of careful selection, drying, gluing, and finishing. We don’t just work with wood — we preserve its history so it can live on in new spaces."
   },
+
+  "historyHero": {
+    "paragraph": "Producers of three-layer furniture panels made from old, century-old reclaimed oak and pine, compliant with European standards"
+  },
+
 
   "values": {
     "title": "Team Values of Invest Union",
@@ -94,8 +153,33 @@
     }
   },
 
+  "productionPower": {
+    "title": "Production",
+    "heading": "Production Facilities",
+    "buttonText": "View full gallery"
+  },
+
+
+  "contacts": {
+    "title": "Contacts",
+    "heading": {
+      "line1": "Ready to create a project",
+      "line2": "from 100-year-old oak?"
+    },
+    "paragraph": "We are the only company in Ukraine producing three-layer furniture panels from reclaimed oak to European standards. Leave a request, and we will help you create a unique interior.",
+    "nameField": "Name",
+    "companyNameField": "Company Name",
+    "emailField": "Email",
+    "phoneField": "Phone",
+    "messageField": "Message",
+    "buttonText": "Get an offer"
+  },
+
+
   "footer": {
     "address": "81200, Ukraine, Lviv region, Peremyshlyany city, Borshivska street 46",
-    "phone": "+380 67 682 5522"
+    "phone": "+380 67 682 5522",
+    "rightsReserved": "Invest-Union. All rights reserved.",
+    "buttonText": "Discuss cooperation"
   }
 }

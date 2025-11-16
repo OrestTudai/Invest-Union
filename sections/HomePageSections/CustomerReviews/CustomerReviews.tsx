@@ -1,20 +1,28 @@
 import {SectionContainer, SectionName, SharedSwiper} from "@/components";
-import {CustomerReviewsData} from "@/sections/HomePageSections/CustomerReviews/constants";
+import {getTranslations} from "next-intl/server";
+import getCustomerReviewData from "@/sections/HomePageSections/CustomerReviews/constants";
 
-export const CustomerReviews = () => {
+type Props = {
+  locale: string;
+}
+
+export const CustomerReviews = async ({ locale }: Props) => {
+  const translations = await getTranslations({ locale, namespace: 'testimonials' });
+  const CustomerReviewsData = await getCustomerReviewData(locale)
+
   return (
     <section className="px-4 pb-[100px] md:px-10 md:pb-[180px] xl:pb-[200px]">
       <SectionContainer>
         <SectionName
-          sectionName={<h2 className="hidden xl:block">Що кажуть <br />наші клієнти</h2>}
-          heading={'Відгуки'}
+          sectionName={<h2 className="hidden xl:block">{translations('heading.line1')} <br />{translations('heading.line2')}</h2>}
+          heading={translations('title')}
           postsCount={'(06)'}
         />
         <div className="flex flex-col mt-8 md:flex-row md:justify-between md:mt-10 xl:hidden">
-          <h2 className="mb-10 md:mb-[60px]">Що кажуть <br />наші клієнти</h2>
+          <h2 className="mb-10 md:mb-[60px]">{translations('heading.line1')} <br />{translations('heading.line2')}</h2>
           <div className="md:max-w-[244px]">
-            <p>Більше 90% клієнтів <span className="text-green">рекомендують нас.</span></p>
-            <p className="mt-2 mb-10">А решта 10% ще просто не встигли цього зробити.</p>
+            <p>{translations('moreClients.line1')} <span className="text-green">{translations('moreClients.line2')}</span></p>
+            <p className="mt-2 mb-10">{translations('moreClients.line3')}</p>
           </div>
         </div>
         <div className="block md:hidden">
@@ -26,7 +34,6 @@ export const CustomerReviews = () => {
                   <div className="w-[70px] h-[70px] bg-darkGray rounded-full"></div>
                   <div className="flex flex-col gap-1">
                     <span className="text-black">{review.name}</span>
-                    <span className="text-[#B9B9B9]">{review.company}</span>
                   </div>
                 </div>
                 <p className="text-darkGray">{review.reviewText}</p>
@@ -43,7 +50,6 @@ export const CustomerReviews = () => {
                   <div className="w-[70px] h-[70px] bg-darkGray rounded-full"></div>
                   <div className="flex flex-col gap-1">
                     <span className="text-black !text-[20px]">{review.name}</span>
-                    <span className="text-[#B9B9B9] text-[16px]">{review.company}</span>
                   </div>
                 </div>
                 <p className="text-darkGray !text-[16px]">{review.reviewText}</p>
@@ -53,8 +59,8 @@ export const CustomerReviews = () => {
         </div>
         <div className="hidden items-end justify-between xl:flex xl:mt-20">
           <div className="md:max-w-[244px]">
-            <p>Більше 90% клієнтів <span className="text-green">рекомендують нас.</span></p>
-            <p className="mt-2">А решта 10% ще просто не встигли цього зробити.</p>
+            <p>{translations('moreClients.line1')} <span className="text-green">{translations('moreClients.line2')}</span></p>
+            <p className="mt-2">{translations('moreClients.line3')}</p>
           </div>
           <SharedSwiper
             slidesPerView={2}
@@ -65,7 +71,6 @@ export const CustomerReviews = () => {
                   <div className="w-[70px] h-[70px] bg-darkGray rounded-full"></div>
                   <div className="flex flex-col gap-1">
                     <span className="text-black !text-[20px]">{review.name}</span>
-                    <span className="text-[#B9B9B9] text-[16px]">{review.company}</span>
                   </div>
                 </div>
                 <p className="text-darkGray !text-[16px]">{review.reviewText}</p>

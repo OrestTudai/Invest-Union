@@ -5,10 +5,10 @@ export default async function GalleryPage({params}: PageProps<'/[locale]'>) {
 
   return (
     <>
-      <Gallery />
-      <DevelopBusiness />
+      <Gallery locale={locale} />
+      <DevelopBusiness locale={locale} />
       <section className="md:pt-[180px]">
-        <Contacts hasPaddingTop />
+        <Contacts locale={locale} hasPaddingTop />
       </section>
     </>
   )

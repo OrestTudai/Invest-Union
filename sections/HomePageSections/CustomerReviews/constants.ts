@@ -1,20 +1,23 @@
-export const CustomerReviewsData = [
-  {
-    image: '',
-    name: 'Ім’я 1',
-    company: 'Компанія',
-    reviewText: 'Amet quam nunc volutpat sapien mauris. Amet orci vivamus imperdiet dis diam dui leo nec. Vivamus urna erat magna neque adipiscing mattis cras. Feugiat diam amet euismod massa turpis mi a sit iaculis. At ligula neque nunc egestas accumsan auctor. Amet quam nunc volutpat sapien mauris. Amet orci vivamus imperdiet dis diam dui leo nec.'
-  },
-  {
-    image: '',
-    name: 'Ім’я 2',
-    company: 'Компанія',
-    reviewText: 'Amet quam nunc volutpat sapien mauris. Amet orci vivamus imperdiet dis diam dui leo nec. Vivamus urna erat magna neque adipiscing mattis cras. Feugiat diam amet euismod massa turpis mi a sit iaculis. At ligula neque nunc egestas accumsan auctor. Amet quam nunc volutpat sapien mauris. Amet orci vivamus imperdiet dis diam dui leo nec.'
-  },
-  {
-    image: '',
-    name: 'Ім’я 3',
-    company: 'Компанія',
-    reviewText: 'Amet quam nunc volutpat sapien mauris. Amet orci vivamus imperdiet dis diam dui leo nec. Vivamus urna erat magna neque adipiscing mattis cras. Feugiat diam amet euismod massa turpis mi a sit iaculis. At ligula neque nunc egestas accumsan auctor. Amet quam nunc volutpat sapien mauris. Amet orci vivamus imperdiet dis diam dui leo nec.'
-  },
-]
+import {getTranslations} from "next-intl/server";
+
+export default async function getCustomerReviewData (locale: string) {
+  const translations = await getTranslations({ locale, namespace: 'testimonials' })
+
+  return [
+    {
+      image: '',
+      name: locale === 'uk' ? 'Ім’я 1' : 'Name 1',
+      reviewText: translations('list.first')
+    },
+    {
+      image: '',
+      name: locale === 'uk' ? 'Ім’я 2' : 'Name 2',
+      reviewText: translations('list.second')
+    },
+    {
+      image: '',
+      name: locale === 'uk' ? 'Ім’я 3' : 'Name 3',
+      reviewText: translations('list.third')
+    },
+  ]
+}

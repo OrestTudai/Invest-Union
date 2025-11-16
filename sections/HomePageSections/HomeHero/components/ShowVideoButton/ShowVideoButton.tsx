@@ -5,7 +5,11 @@ import { WatchVideoButtonBgMd, WatchVideoButtonBgSm, WatchVideoButtonBgXl } from
 import Image from "next/image";
 import { PlayIcon } from "@/assets/svg";
 
-export const ShowVideoButton = () => {
+type Props = {
+  buttonText: string;
+}
+
+export const ShowVideoButton = ({ buttonText }: Props) => {
   const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
@@ -23,7 +27,7 @@ export const ShowVideoButton = () => {
         className="flex flex-col justify-end items-center h-[390px] w-[95px] gap-20 pb-8 bg-cover md:hidden"
         style={{ backgroundImage: `url(${WatchVideoButtonBgSm.src})` }}
       >
-        <span className="block rotate-[-90deg] text-nowrap opacity-70">Дивитись відео</span>
+        <span className="block rotate-[-90deg] text-nowrap opacity-70">{buttonText}</span>
         <Image src={PlayIcon} alt="Play icon" />
       </button>
 
@@ -32,7 +36,7 @@ export const ShowVideoButton = () => {
         className="hidden md:flex flex-col justify-end items-center h-[330px] w-[95px] gap-20 pb-8 bg-cover mt-[130px] xl:hidden"
         style={{ backgroundImage: `url(${WatchVideoButtonBgMd.src})` }}
       >
-        <span className="block rotate-[-90deg] text-nowrap opacity-70">Дивитись відео</span>
+        <span className="block rotate-[-90deg] text-nowrap opacity-70">{buttonText}</span>
         <Image src={PlayIcon} alt="Play icon" />
       </button>
 
@@ -41,7 +45,7 @@ export const ShowVideoButton = () => {
         className="hidden flex-col ml-[220px] justify-end items-center h-[475px] w-[95px] gap-20 pb-8 bg-cover xl:flex"
         style={{ backgroundImage: `url(${WatchVideoButtonBgXl.src})` }}
       >
-        <span className="block rotate-[-90deg] text-nowrap opacity-70">Дивитись відео</span>
+        <span className="block rotate-[-90deg] text-nowrap opacity-70">{buttonText}</span>
         <Image src={PlayIcon} alt="Play icon" />
       </button>
 

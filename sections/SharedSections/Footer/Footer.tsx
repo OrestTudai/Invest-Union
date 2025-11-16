@@ -11,6 +11,7 @@ type Props = {
 
 export const Footer = async ({ locale }: Props) => {
   const translations = await getTranslations({ locale, namespace: 'footer' })
+  const year = new Date().getFullYear()
 
   return (
     <footer className="px-4 pt-10 pb-[48px] bg-black text-white md:pt-[72px] md:pb-10 md:px-10 xl:pt-[100px] xl:pb-12 xl:px-10">
@@ -24,23 +25,24 @@ export const Footer = async ({ locale }: Props) => {
           <p className="md:hidden">{translations('address')}</p>
           <div className="flex flex-col gap-10 md:flex-row md:w-[433px] md:ml-auto md:justify-between">
             <div className="flex flex-col text-lightGray">
-              <Link className="w-fit p-2" href="/">Головна</Link>
-              <Link className="w-fit p-2" href="/about-us">Про нас</Link>
-              <Link className="w-fit p-2" href="/gallery">Галерея</Link>
-              <Link className="w-fit p-2" href="/news">Новини</Link>
-              <Link className="w-fit p-2" href="/contacts">Контакти</Link>
+              <Link className="w-fit p-2" href={`/${locale}`}>{locale === 'uk' ? 'Головна' : 'Home'}</Link>
+              <Link className="w-fit p-2" href={`/${locale}/about-us`}>{locale === 'uk' ? 'Про нас': 'About us'}</Link>
+              <Link className="w-fit p-2" href={`/${locale}/gallery`}>{locale === 'uk' ? 'Галерея' : 'Gallery'}</Link>
+              {/*<Link className="w-fit p-2" href="/news">Новини</Link>*/}
+              <Link className="w-fit p-2" href={`/${locale}/contacts`}>{locale === 'uk' ? 'Контакти' : 'Contacts'}</Link>
             </div>
             <div className="flex flex-col text-lightGray">
               <Link className="w-fit p-2" href="/">Facebook</Link>
               <Link className="w-fit p-2" href="/">Instagram</Link>
+              <Link className="w-fit p-2" href="/">Tik Tok</Link>
             </div>
           </div>
           <div className="flex flex-col gap-3 text-lightGray md:w-[433px] md:ml-auto">
-            <Link className="w-fit underline" href="/">{translations('phone')}</Link>
-            <Link className="w-fit underline" href="/">example@teamwebflow.com</Link>
+            <span className="w-fit underline">{translations('phone')}</span>
+            <span className="w-fit underline">ltd.invest.union@gmail.com</span>
           </div>
           <div className="flex flex-col gap-4 text-lightGray md:w-[433px] md:ml-auto">
-            <Link className="w-fit" href={'/'}>Політика конфіденційності</Link>
+            {/*<Link className="w-fit" href={'/'}>Політика конфіденційності</Link>*/}
             <span>© 2025 Invest-Union. Всі права захищено.</span>
           </div>
         </div>
@@ -50,28 +52,29 @@ export const Footer = async ({ locale }: Props) => {
             <div className="flex flex-col gap-[130px] ml-[123px]">
               <p className="md:!text-[20px]">{translations('address')}</p>
               <div className="flex flex-col gap-3 text-lightGray md:w-[433px] md:ml-auto">
-                <Link className="w-fit underline" href="/">{translations('phone')}</Link>
-                <Link className="w-fit underline" href="/">example@teamwebflow.com</Link>
+                <span className="w-fit underline">{translations('phone')}</span>
+                <span className="w-fit underline">ltd.invest.union@gmail.com</span>
               </div>
             </div>
           </div>
           <div className="flex flex-col gap-[38px]">
             <div className="flex flex-col gap-[200px] md:flex-row md:w-[433px]">
               <div className="flex flex-col text-lightGray">
-                <Link className="w-fit p-2" href="/">Головна</Link>
-                <Link className="w-fit p-2" href="/about-us">Про нас</Link>
-                <Link className="w-fit p-2" href="/gallery">Галерея</Link>
-                <Link className="w-fit p-2" href="/news">Новини</Link>
-                <Link className="w-fit p-2" href="/contacts">Контакти</Link>
+                <Link className="w-fit p-2" href={`/${locale}`}>{locale === 'uk' ? 'Головна' : 'Home'}</Link>
+                <Link className="w-fit p-2" href={`/${locale}/about-us`}>{locale === 'uk' ? 'Про нас': 'About us'}</Link>
+                <Link className="w-fit p-2" href={`/${locale}/gallery`}>{locale === 'uk' ? 'Галерея' : 'Gallery'}</Link>
+                {/*<Link className="w-fit p-2" href="/news">Новини</Link>*/}
+                <Link className="w-fit p-2" href={`/${locale}/contacts`}>{locale === 'uk' ? 'Контакти' : 'Contacts'}</Link>
               </div>
               <div className="flex flex-col text-lightGray">
                 <Link className="w-fit p-2" href="/">Facebook</Link>
                 <Link className="w-fit p-2" href="/">Instagram</Link>
+                <Link className="w-fit p-2" href="/">Tik Tok</Link>
               </div>
             </div>
             <div className="flex flex-col gap-4 text-lightGray md:w-[433px] md:ml-auto text-[14px]">
-              <Link className="w-fit" href={'/'}>Політика конфіденційності</Link>
-              <span>© 2025 Invest-Union. Всі права захищено.</span>
+              {/*<Link className="w-fit" href={'/'}>Політика конфіденційності</Link>*/}
+              <span>© {year} {translations('rightsReserved')}</span>
             </div>
           </div>
           <GoToTopButton />

@@ -2,24 +2,31 @@ import {GreenButton, SectionContainer, SectionName} from "@/components";
 import { ButtonType } from "@/components/GreenButton";
 import { ProductionPowerData } from "@/sections/AboutUsSections/ProductionPower/constants";
 import Image from "next/image";
+import {getTranslations} from "next-intl/server";
 
-export const ProductionPower = () => {
+type Props = {
+  locale: string;
+}
+
+export const ProductionPower = async ({ locale }: Props) => {
+  const translations = await getTranslations({ locale, namespace: 'productionPower' });
+
   return (
     <section className="px-4">
       <SectionContainer>
         <SectionName
           sectionName={
             <h2 className="hidden mb-20 xl:block">
-              Виробничі потужності <br className="hidden md:block" />
+              {translations('heading')} <br className="hidden md:block" />
               <span className="text-green">Invest-Union</span>
             </h2>
           }
-          heading="Виробництво"
+          heading={translations('title')}
           postsCount="(07)"
         />
 
         <h2 className="mt-8 mb-10 md:mt-10 md:mb-[60px] xl:hidden">
-          Виробничі потужності <br className="hidden md:block" />{" "}
+          {translations('heading')} <br className="hidden md:block" />{" "}
           <span className="text-green">Invest-Union</span>
         </h2>
 
@@ -200,7 +207,7 @@ export const ProductionPower = () => {
         <GreenButton
           className="md:hidden xl:hidden"
           buttonType={ButtonType.Outlined}
-          buttonText="Переглянути всю галерею"
+          buttonText={translations('buttonText')}
         />
       </SectionContainer>
     </section>

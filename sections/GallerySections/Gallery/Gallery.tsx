@@ -1,13 +1,20 @@
 import { GalleryData } from "@/sections/GallerySections/Gallery/constants";
 import Image from "next/image";
 import {SectionContainer} from "@/components";
+import {getTranslations} from "next-intl/server";
 
-export const Gallery = () => {
+type Props = {
+  locale: string;
+}
+
+export const Gallery = async ({ locale }: Props) => {
+  const translations = await getTranslations({ locale, namespace: 'gallery' });
+
   return (
     <section className="pt-[179px] pb-[100px] px-4 md:pb-[180px] md:px-10">
       <SectionContainer>
         <div className="flex items-center justify-between mb-10 md:mb-[60px] xl:mb-20">
-          <h1 className="text-[32px] font-semibold">Галерея</h1>
+          <h1 className="text-[32px] font-semibold">{translations('title')}</h1>
           <span className="text-[14px] font-medium">(25)</span>
         </div>
 

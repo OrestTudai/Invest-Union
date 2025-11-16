@@ -6,6 +6,7 @@ export default async function ContactsPage ({params}: PageProps<'/[locale]'>) {
   return (
     <>
      <Contacts
+       locale={locale}
        hasPaddingTop
        paddingTop={179}
      />

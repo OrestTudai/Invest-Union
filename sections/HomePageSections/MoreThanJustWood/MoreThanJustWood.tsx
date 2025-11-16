@@ -3,19 +3,26 @@ import {ButtonType} from "@/components/GreenButton";
 import {MoreThanJustWoodData, MoreThanJustWoodDataXl} from "@/sections/HomePageSections/MoreThanJustWood/constants";
 import MoreThanJustWoodCard from "@/sections/HomePageSections/MoreThanJustWood/components/MoreThanJustWoodCard";
 import Image from "next/image";
+import {getTranslations} from "next-intl/server";
 
-export const MoreThanJustWood = () => {
+type Props = {
+  locale: string;
+}
+
+export const MoreThanJustWood = async ({ locale }: Props) => {
+  const translations = await getTranslations({ locale, namespace: 'gallery' })
+
   return (
     <section className="pb-[100px] px-4 md:pb-[180px] md:px-10 xl:pb-[200px]">
       <SectionContainer>
         <SectionName
           sectionName={
-            <h2 className="hidden xl:block">Щось більше <br /> ніж просто <span className="text-green">дерево</span></h2>
+            <h2 className="hidden xl:block">{translations('heading.line1')} <br /> {translations('heading.line2')} <span className="text-green">{translations('heading.line3')}</span></h2>
           }
-          heading={'Галерея'}
+          heading={translations('title')}
           postsCount={'(25+)'}
         />
-        <h2 className="mt-8 mb-10 md:mt-10 md:mb-[60px] xl:hidden">Щось більше <br /> ніж просто <span className="text-green">дерево</span></h2>
+        <h2 className="mt-8 mb-10 md:mt-10 md:mb-[60px] xl:hidden">{translations('heading.line1')} <br /> {translations('heading.line2')} <span className="text-green">{translations('heading.line3')}</span></h2>
         <div className="flex flex-col gap-6 mb-6 md:grid md:grid-cols-2 md:gap-y-8 md:gap-x-5 md:mb-10 xl:mt-20 xl:hidden">
           {MoreThanJustWoodData.map((item, index) => (
             <MoreThanJustWoodCard
@@ -100,7 +107,7 @@ export const MoreThanJustWood = () => {
           </div>
         </div>
         <div className="md:max-w-[305px] md:mx-auto xl:mt-12">
-          <GreenButton buttonType={ButtonType.Outlined} buttonText={'Переглянути всю галерею'} />
+          <GreenButton buttonType={ButtonType.Outlined} buttonText={translations('watchAllGallery')} />
         </div>
       </SectionContainer>
     </section>

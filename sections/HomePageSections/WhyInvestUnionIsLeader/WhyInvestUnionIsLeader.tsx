@@ -9,6 +9,7 @@ type Props = {
 
 export const WhyInvestUnionIsLeader = async ({ locale }: Props) => {
   const ReasonsData = await getReasonsData(locale);
+  const translations = await getTranslations({ locale, namespace: 'advantages' });
 
   return (
     <section className="pb-[100px] md:pb-[180px] xl:pb-[200px]">
@@ -17,14 +18,14 @@ export const WhyInvestUnionIsLeader = async ({ locale }: Props) => {
           <SectionName
             sectionName={
               <h2 className="hidden mb-10 md:mb-[60px] max-w-[600px] xl:block">
-                Що робить Invest-Union <span className="text-green">лідером галузі</span>
+                {translations('heading.line1')} <span className="text-green">{translations('heading.line2')}</span>
               </h2>
             }
-            heading={'Переваги'}
+            heading={translations('title')}
             postsCount={'(04)'}
           />
           <h2 className="mt-8 mb-10 md:mt-10 md:mb-[60px] xl:hidden">
-            Що робить Invest-Union <span className="text-green">лідером галузі</span>
+            {translations('heading.line1')} <span className="text-green">{translations('heading.line2')}</span>
           </h2>
         </div>
         <div className="flex flex-col gap-[1px] md:grid md:grid-cols-2 xl:flex xl:flex-row xl:mt-20">

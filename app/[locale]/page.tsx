@@ -12,15 +12,15 @@ export default async function Home({params}: PageProps<'/[locale]'>) {
 
   return (
     <>
-      <HomeHero />
-      <AboutInvestUnion />
+      <HomeHero locale={locale} />
+      <AboutInvestUnion locale={locale} />
       <WhyInvestUnionIsLeader locale={locale} />
-      <MoreThanJustWood />
-      <CustomerReviews />
-      <DevelopBusiness />
+      <MoreThanJustWood locale={locale} />
+      <CustomerReviews locale={locale} />
+      <DevelopBusiness locale={locale} />
       <QuestionsAndAnswers locale={locale} />
       {/*<ReadMoreInteresting />*/}
-      <Contacts />
+      <Contacts locale={locale} />
     </>
   );
 }
