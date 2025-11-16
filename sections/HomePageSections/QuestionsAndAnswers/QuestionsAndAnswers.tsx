@@ -1,8 +1,15 @@
 import {SectionContainer, SectionName} from "@/components";
 import QuestionAndAnswerItem from "@/sections/HomePageSections/QuestionsAndAnswers/components/QuestionAndAnswerItem";
-import {QuestionsAndAnswersData} from "@/sections/HomePageSections/QuestionsAndAnswers/components/constants";
+import {
+  getQuestionsAndAnswersData,
+} from "@/sections/HomePageSections/QuestionsAndAnswers/components/constants";
 
-export const QuestionsAndAnswers = () => {
+type Props = {
+  locale: string;
+}
+
+export const QuestionsAndAnswers = async ({ locale }: Props) => {
+  const QuestionsAndAnswersData = await getQuestionsAndAnswersData(locale)
   return (
     <section className="py-[100px] px-4 md:py-[180px] md:px-10 xl:py-[200px]">
       <SectionContainer>

@@ -7,16 +7,19 @@ import {
   TeamValues,
   WhyInvestUnionIsLeader
 } from "@/sections";
+import {getTranslations} from "next-intl/server";
 
-export default function AboutUsPage() {
+export default async function AboutUsPage({params}: PageProps<'/[locale]'>) {
+  const { locale } = await params
+
   return (
     <>
-      <AboutUsHero />
+      <AboutUsHero locale={locale} />
       <History />
-      <TeamValues />
-      <WhyInvestUnionIsLeader />
+      <TeamValues locale={locale} />
+      <WhyInvestUnionIsLeader locale={locale} />
       <ProductionPower />
-      <QuestionsAndAnswers />
+      <QuestionsAndAnswers locale={locale} />
       {/*<ReadMoreInteresting />*/}
       <Contacts />
     </>

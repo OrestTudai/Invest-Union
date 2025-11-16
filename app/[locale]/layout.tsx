@@ -37,15 +37,17 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  const messages = (await import(`../../translations/${locale}.json`)).default;
+
   setRequestLocale(locale);
 
   return (
     <html lang={locale}>
     <body className={`${inter.variable} ${libreCaslon.variable} antialiased`}>
-    <NextIntlClientProvider locale={locale}>
+    <NextIntlClientProvider locale={locale} messages={messages}>
       <Header />
       {children}
-      <Footer />
+      <Footer locale={locale} />
     </NextIntlClientProvider>
     </body>
     </html>

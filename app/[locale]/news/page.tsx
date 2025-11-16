@@ -1,6 +1,8 @@
 import {News} from "@/sections";
 
-export default function NewsPage () {
+export default async function NewsPage ({params}: PageProps<'/[locale]'>) {
+  const { locale } = await params
+
   return (
     <>
       <News />

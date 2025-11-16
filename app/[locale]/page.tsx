@@ -7,16 +7,18 @@ import {
   WhyInvestUnionIsLeader
 } from "@/sections";
 
-export default function Home() {
+export default async function Home({params}: PageProps<'/[locale]'>) {
+  const { locale } = await params
+
   return (
     <>
       <HomeHero />
       <AboutInvestUnion />
-      <WhyInvestUnionIsLeader />
+      <WhyInvestUnionIsLeader locale={locale} />
       <MoreThanJustWood />
       <CustomerReviews />
       <DevelopBusiness />
-      <QuestionsAndAnswers />
+      <QuestionsAndAnswers locale={locale} />
       {/*<ReadMoreInteresting />*/}
       <Contacts />
     </>

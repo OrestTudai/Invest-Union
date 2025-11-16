@@ -11,7 +11,7 @@ export const ReasonCard = ({ heading, paragraph, image }: Props) => {
     <div
       className="relative overflow-hidden group
                  pt-[140px] px-10 pb-[42px] text-center bg-cover text-white
-                 md:bg-center xl:py-[188px] xl:px-8 xl:min-h-[520px]"
+                 md:bg-center xl:py-[188px] xl:px-8 xl:min-h-[520px] xl:max-w-1/4"
       style={{ backgroundImage: `url(${image.src})` }}
     >
       <div className="absolute inset-0 bg-black/20 xl:group-hover:bg-black/50 transition-colors duration-500 hidden xl:block" />

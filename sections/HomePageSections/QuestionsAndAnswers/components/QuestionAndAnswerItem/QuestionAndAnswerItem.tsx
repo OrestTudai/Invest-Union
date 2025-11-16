@@ -17,16 +17,16 @@ export const QuestionAndAnswerItem = ({ heading, paragraph, index }: Props) => {
     <div className="border-t border-lightGray">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex justify-between items-center w-full py-6 px-2 text-left active:bg-[#80907433]"
+        className="flex justify-start items-center w-full py-6 px-2 text-left active:bg-[#80907433]"
       >
         <span className="hidden text-[20px] font-medium md:block">(0{index + 1})</span>
         <h4 className={`max-w-[275px] ${isOpen && 'text-green'} md:max-w-fit md:ml-10`}>{heading}</h4>
         {isOpen ? (
-          <Image className="md:ml-4" src={CrossIcon} alt={'Close question and answer item'} />
+          <Image className="md:ml-auto" src={CrossIcon} alt={'Close question and answer item'} />
         ) : (
           <>
             <Image className="md:hidden" src={ArrowRight} alt={'Open question and answer item'} />
-            <Image className="hidden ml-4 md:block" src={ArrowRightMd} alt={'Open question and answer item'} />
+            <Image className="hidden ml-auto md:block" src={ArrowRightMd} alt={'Open question and answer item'} />
           </>
         )}
       </button>

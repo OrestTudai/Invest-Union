@@ -1,24 +1,29 @@
-import {FirstLeadReasonBgSm, FourthLeadReasonBgSm, SecondLeadReasonBgSm, ThirdLeadReasonBgSm} from "@/assets/images";
+import { getTranslations } from "next-intl/server";
+import { FirstLeadReasonBgSm, FourthLeadReasonBgSm, SecondLeadReasonBgSm, ThirdLeadReasonBgSm } from "@/assets/images";
 
-export const ReasonsData = [
-  {
-    heading: 'Екологічність',
-    paragraph: 'Sed ac volutpat quam magnis. Est morbi arcu tincidunt elementum id urna tempor ultrices volutpat. Quis nullam vel et mi urna lacus varius risus. ',
-    image: FirstLeadReasonBgSm,
-  },
-  {
-    heading: 'Якість і довговічність',
-    paragraph: 'Sed ac volutpat quam magnis. Est morbi arcu tincidunt elementum id urna tempor ultrices volutpat. Quis nullam vel et mi urna lacus varius risus. ',
-    image: SecondLeadReasonBgSm,
-  },
-  {
-    heading: 'Вторинна переробка',
-    paragraph: 'Sed ac volutpat quam magnis. Est morbi arcu tincidunt elementum id urna tempor ultrices volutpat. Quis nullam vel et mi urna lacus varius risus. ',
-    image: ThirdLeadReasonBgSm,
-  },
-  {
-    heading: 'Міжнародний досвід',
-    paragraph: 'Sed ac volutpat quam magnis. Est morbi arcu tincidunt elementum id urna tempor ultrices volutpat. Quis nullam vel et mi urna lacus varius risus. ',
-    image: FourthLeadReasonBgSm,
-  },
-]
+export async function getReasonsData(locale: string) {
+  const translations = await getTranslations({ locale, namespace: "advantages" });
+
+  return [
+    {
+      heading: translations("items.eco.title"),
+      paragraph: translations("items.eco.text"),
+      image: FirstLeadReasonBgSm,
+    },
+    {
+      heading: translations("items.quality.title"),
+      paragraph: translations("items.quality.text"),
+      image: SecondLeadReasonBgSm,
+    },
+    {
+      heading: translations("items.recycling.title"),
+      paragraph: translations("items.recycling.text"),
+      image: ThirdLeadReasonBgSm,
+    },
+    {
+      heading: translations("items.international.title"),
+      paragraph: translations("items.international.text"),
+      image: FourthLeadReasonBgSm,
+    },
+  ];
+}

@@ -82,7 +82,7 @@ export const Header = () => {
                   className={`w-fit py-2 px-2 ${pathname === "/" && "text-green"}`}
                   href={`/${locale}`}
                 >
-                  Головна
+                  {locale === 'uk' ? 'Головна' : 'Home'}
                 </Link>
               </li>
               <li>
@@ -90,7 +90,7 @@ export const Header = () => {
                   className={`w-fit py-2 px-2 ${pathname === "/about-us" && "text-green"}`}
                   href={`/${locale}/about-us`}
                 >
-                  Про нас
+                  {locale === 'uk' ? 'Про нас' : 'About us'}
                 </Link>
               </li>
               <li>
@@ -98,7 +98,7 @@ export const Header = () => {
                   className={`w-fit py-2 px-2 ${pathname === "/gallery" && "text-green"}`}
                   href={`/${locale}/gallery`}
                 >
-                  Галерея
+                  {locale === 'uk' ? 'Галерея' : 'Gallery'}
                 </Link>
               </li>
               {/*<li>*/}
@@ -106,7 +106,7 @@ export const Header = () => {
               {/*    className={`w-fit py-2 px-2 ${pathname === "/news" && "text-green"}`}*/}
               {/*    href={`/${locale}/news`}*/}
               {/*  >*/}
-              {/*    Новини*/}
+              {/*    {locale === 'uk' ? 'Новини' : 'News'}*/}
               {/*  </Link>*/}
               {/*</li>*/}
               <li>
@@ -114,7 +114,7 @@ export const Header = () => {
                   className={`w-fit py-2 px-2 ${pathname === "/contacts" && "text-green"}`}
                   href={`/${locale}/contacts`}
                 >
-                  Контакти
+                  {locale === 'uk' ? 'Контакти' : 'Contacts'}
                 </Link>
               </li>
             </ul>
@@ -142,7 +142,14 @@ export const Header = () => {
           </div>
         </SectionContainer>
 
-        {isMenuOpen && <BurgerMenu toggleMenu={toggleMenu} />}
+        {isMenuOpen &&
+          <BurgerMenu
+            locale={locale}
+            enSwitchClick={() => changeLocale('en')}
+            ukSwitchClick={() => changeLocale('uk')}
+            toggleMenu={toggleMenu}
+          />
+        }
       </header>
     </>
   );

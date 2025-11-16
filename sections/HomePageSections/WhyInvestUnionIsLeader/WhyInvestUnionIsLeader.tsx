@@ -1,8 +1,15 @@
 import {SectionContainer, SectionName} from "@/components";
-import {ReasonsData} from "@/sections/HomePageSections/WhyInvestUnionIsLeader/constants";
+import {getReasonsData} from "@/sections/HomePageSections/WhyInvestUnionIsLeader/constants";
 import ReasonCard from "@/sections/HomePageSections/WhyInvestUnionIsLeader/components/ReasonCard";
+import {getTranslations} from "next-intl/server";
 
-export const WhyInvestUnionIsLeader = () => {
+type Props = {
+  locale: string;
+}
+
+export const WhyInvestUnionIsLeader = async ({ locale }: Props) => {
+  const ReasonsData = await getReasonsData(locale);
+
   return (
     <section className="pb-[100px] md:pb-[180px] xl:pb-[200px]">
       <SectionContainer>

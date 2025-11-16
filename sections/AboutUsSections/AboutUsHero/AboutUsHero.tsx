@@ -2,8 +2,15 @@ import { AboutUsInvestUnionWoodBg } from "@/assets/images";
 import Image from "next/image";
 import { ArrowsButton } from "@/assets/svg";
 import {SectionContainer} from "@/components";
+import {getTranslations} from "next-intl/server";
 
-export const AboutUsHero = () => {
+type Props = {
+  locale: string;
+}
+
+export const AboutUsHero = async ({ locale }: Props) => {
+  const translations = await getTranslations({ locale, namespace: 'about' })
+
   return (
     <section
       className="bg-cover bg-center"

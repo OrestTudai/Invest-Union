@@ -1,8 +1,14 @@
 import {SectionContainer, SectionName} from "@/components";
 import TeamValuesItem from "@/sections/AboutUsSections/TeamValues/components";
-import {TeamValuesData} from "@/sections/AboutUsSections/TeamValues/constants";
+import {getTeamValuesData} from "@/sections/AboutUsSections/TeamValues/constants";
 
-export const TeamValues = () => {
+type Props = {
+  locale: string;
+}
+
+export const TeamValues = async ({ locale }: Props) => {
+  const TeamValuesData = await getTeamValuesData(locale)
+
   return (
     <section className="pb-[100px] px-4 md:pb-[180px] md:px-10">
       <SectionContainer>
