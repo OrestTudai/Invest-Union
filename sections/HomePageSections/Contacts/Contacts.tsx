@@ -71,7 +71,7 @@ export const Contacts = async ({ locale, useSecondHeading = false, hasPaddingTop
                   <Image src={Mail} alt={'Email'} />
                   <span className="font-medium">{contactsTranslations('emailField')}</span>
                 </div>
-                <span className="mt-1">ltd.invest.union@gmail.com</span>
+                <span className="mt-1">invest-union@ukr.net </span>
               </div>
               <div className="mt-2 md:mt-4">
                 <div className="flex items-center gap-5">
@@ -88,7 +88,7 @@ export const Contacts = async ({ locale, useSecondHeading = false, hasPaddingTop
               </p>
               <div className="flex items-center gap-5">
                 <Image src={Mail} alt={'Email'} />
-                <span>ltd.invest.union@gmail.com</span>
+                <span>invest-union@ukr.net</span>
               </div>
               <div className="flex items-start gap-5 mt-2 md:mt-4">
                 <Image src={Phone} alt={'Phone'} />

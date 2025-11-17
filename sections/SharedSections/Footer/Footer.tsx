@@ -39,7 +39,7 @@ export const Footer = async ({ locale }: Props) => {
           </div>
           <div className="flex flex-col gap-3 text-lightGray md:w-[433px] md:ml-auto">
             <span className="w-fit underline">{translations('phone')}</span>
-            <span className="w-fit underline">ltd.invest.union@gmail.com</span>
+            <span className="w-fit underline">invest-union@ukr.net </span>
           </div>
           <div className="flex flex-col gap-4 text-lightGray md:w-[433px] md:ml-auto">
             {/*<Link className="w-fit" href={'/'}>Політика конфіденційності</Link>*/}
@@ -53,7 +53,7 @@ export const Footer = async ({ locale }: Props) => {
               <p className="md:!text-[20px] md:px-2">{translations('address')}</p>
               <div className="flex flex-col gap-3 text-lightGray md:w-[433px] md:ml-auto xl:ml-0">
                 <span className="w-fit underline">{translations('phone')}</span>
-                <span className="w-fit underline">ltd.invest.union@gmail.com</span>
+                <span className="w-fit underline">invest-union@ukr.net</span>
               </div>
             </div>
           </div>
