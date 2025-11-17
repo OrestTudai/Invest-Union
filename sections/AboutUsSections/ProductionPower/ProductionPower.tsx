@@ -30,165 +30,269 @@ export const ProductionPower = async ({ locale }: Props) => {
           <span className="text-green">Invest-Union</span>
         </h2>
 
+        {/* Mobile */}
         <div className="flex flex-col gap-6 mb-6 md:hidden xl:hidden">
           {ProductionPowerData.map((item, index) => (
-            <div
-              className="flex flex-col gap-2"
-              key={`production-power-data-${index}`}
-            >
+            <div className="flex flex-col gap-2" key={`production-power-data-${index}`}>
               <div className="relative w-full h-[340px] overflow-hidden">
-                <Image
-                  src={item.image}
-                  alt={item.paragraph}
-                  fill
-                  className="object-cover"
-                />
+                {typeof item.image === 'string' && item.image.endsWith('.mp4') ? (
+                  <video
+                    src={item.image}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="object-cover w-full h-full"
+                  />
+                ) : (
+                  <Image
+                    src={item.image}
+                    alt={item.paragraph}
+                    fill
+                    className="object-cover"
+                  />
+                )}
               </div>
             </div>
           ))}
         </div>
 
+        {/* MD grid first row */}
         <div className="hidden md:grid grid-cols-2 gap-5 xl:hidden">
           {ProductionPowerData.slice(0, 3).map((item, index) => {
             if (index === 1) return null;
-
             return (
-              <div
-                className="flex flex-col gap-4"
-                key={`production-power-data-${index}`}
-              >
+              <div className="flex flex-col gap-4" key={`production-power-data-${index}`}>
                 <div className="relative w-full h-[340px] overflow-hidden">
-                  <Image
-                    src={item.image}
-                    alt={item.paragraph}
-                    fill
-                    className="object-cover"
-                  />
+                  {typeof item.image === 'string' && item.image.endsWith('.mp4') ? (
+                    <video
+                      src={item.image}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="object-cover w-full h-full"
+                    />
+                  ) : (
+                    <Image
+                      src={item.image}
+                      alt={item.paragraph}
+                      fill
+                      className="object-cover"
+                    />
+                  )}
                 </div>
               </div>
             );
           })}
         </div>
 
+        {/* MD grid second row */}
         <div className="hidden flex-col gap-4 my-4 md:flex xl:hidden">
           <div className="relative w-full h-[340px] overflow-hidden">
-            <Image
-              src={ProductionPowerData[1].image}
-              alt={ProductionPowerData[1].paragraph}
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
-
-        <div className="hidden md:grid grid-cols-2 gap-x-5 gap-y-5 xl:hidden">
-          {ProductionPowerData.slice(3).map((item, index) => {
-            if (index === 6) return null;
-
-            return (
-              <div
-                className="flex flex-col gap-4"
-                key={`production-power-data-${index}`}
-              >
-                <div className="relative w-full h-[340px] overflow-hidden">
-                  <Image
-                    src={item.image}
-                    alt={item.paragraph}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            );
-          })}
-        </div>
-        <div className="hidden xl:flex gap-5">
-          <div
-            className="flex flex-col gap-4 w-1/3"
-          >
-            <div className="relative h-[435px] w-full overflow-hidden">
-              <Image
-                src={ProductionPowerData[0].image}
-                alt={ProductionPowerData[0].paragraph}
-                fill
-                className="object-cover"
+            {typeof ProductionPowerData[1].image === 'string' && ProductionPowerData[1].image.endsWith('.mp4') ? (
+              <video
+                src={ProductionPowerData[1].image}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="object-cover w-full h-full"
               />
-            </div>
-          </div>
-          <div
-            className="flex flex-col gap-4 w-[calc(66%+32px)]"
-          >
-            <div className="relative h-[435px] w-full overflow-hidden">
+            ) : (
               <Image
                 src={ProductionPowerData[1].image}
                 alt={ProductionPowerData[1].paragraph}
                 fill
                 className="object-cover"
               />
+            )}
+          </div>
+        </div>
+
+        {/* MD grid last rows */}
+        <div className="hidden md:grid grid-cols-2 gap-x-5 gap-y-5 xl:hidden">
+          {ProductionPowerData.slice(3).map((item, index) => {
+            if (index === 6) return null;
+            return (
+              <div className="flex flex-col gap-4" key={`production-power-data-${index}`}>
+                <div className="relative w-full h-[340px] overflow-hidden">
+                  {typeof item.image === 'string' && item.image.endsWith('.mp4') ? (
+                    <video
+                      src={item.image}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="object-cover w-full h-full"
+                    />
+                  ) : (
+                    <Image
+                      src={item.image}
+                      alt={item.paragraph}
+                      fill
+                      className="object-cover"
+                    />
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* XL layout */}
+        <div className="hidden xl:flex gap-5">
+          <div className="flex flex-col gap-4 w-1/3">
+            <div className="relative h-[435px] w-full overflow-hidden">
+              {typeof ProductionPowerData[0].image === 'string' && ProductionPowerData[0].image.endsWith('.mp4') ? (
+                <video
+                  src={ProductionPowerData[0].image}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="object-cover w-full h-full"
+                />
+              ) : (
+                <Image
+                  src={ProductionPowerData[0].image}
+                  alt={ProductionPowerData[0].paragraph}
+                  fill
+                  className="object-cover"
+                />
+              )}
+            </div>
+          </div>
+          <div className="flex flex-col gap-4 w-[calc(66%+32px)]">
+            <div className="relative h-[435px] w-full overflow-hidden">
+              {typeof ProductionPowerData[1].image === 'string' && ProductionPowerData[1].image.endsWith('.mp4') ? (
+                <video
+                  src={ProductionPowerData[1].image}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="object-cover w-full h-full"
+                />
+              ) : (
+                <Image
+                  src={ProductionPowerData[1].image}
+                  alt={ProductionPowerData[1].paragraph}
+                  fill
+                  className="object-cover"
+                />
+              )}
             </div>
           </div>
         </div>
+
         <div className="hidden xl:flex gap-5 mt-5">
-          <div
-            className="flex flex-col gap-4 w-1/3"
-          >
+          <div className="flex flex-col gap-4 w-1/3">
             <div className="relative h-[435px] w-full overflow-hidden">
-              <Image
-                src={ProductionPowerData[3].image}
-                alt={ProductionPowerData[3].paragraph}
-                fill
-                className="object-cover"
-              />
+              {typeof ProductionPowerData[3].image === 'string' && ProductionPowerData[3].image.endsWith('.mp4') ? (
+                <video
+                  src={ProductionPowerData[3].image}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="object-cover w-full h-full"
+                />
+              ) : (
+                <Image
+                  src={ProductionPowerData[3].image}
+                  alt={ProductionPowerData[3].paragraph}
+                  fill
+                  className="object-cover"
+                />
+              )}
             </div>
           </div>
-          <div
-            className="flex flex-col gap-4 w-1/3"
-          >
+          <div className="flex flex-col gap-4 w-1/3">
             <div className="relative h-[435px] w-full overflow-hidden">
-              <Image
-                src={ProductionPowerData[4].image}
-                alt={ProductionPowerData[4].paragraph}
-                fill
-                className="object-cover"
-              />
+              {typeof ProductionPowerData[4].image === 'string' && ProductionPowerData[4].image.endsWith('.mp4') ? (
+                <video
+                  src={ProductionPowerData[4].image}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="object-cover w-full h-full"
+                />
+              ) : (
+                <Image
+                  src={ProductionPowerData[4].image}
+                  alt={ProductionPowerData[4].paragraph}
+                  fill
+                  className="object-cover"
+                />
+              )}
             </div>
           </div>
-          <div
-            className="flex flex-col gap-4 w-1/3"
-          >
+          <div className="flex flex-col gap-4 w-1/3">
             <div className="relative h-[435px] w-full overflow-hidden">
-              <Image
-                src={ProductionPowerData[2].image}
-                alt={ProductionPowerData[2].paragraph}
-                fill
-                className="object-cover"
-              />
+              {typeof ProductionPowerData[2].image === 'string' && ProductionPowerData[2].image.endsWith('.mp4') ? (
+                <video
+                  src={ProductionPowerData[2].image}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="object-cover w-full h-full"
+                />
+              ) : (
+                <Image
+                  src={ProductionPowerData[2].image}
+                  alt={ProductionPowerData[2].paragraph}
+                  fill
+                  className="object-cover"
+                />
+              )}
             </div>
           </div>
         </div>
+
         <div className="hidden xl:flex gap-5 mt-5">
-          <div
-            className="flex flex-col gap-4 w-[calc(66%+32px)]"
-          >
+          <div className="flex flex-col gap-4 w-[calc(66%+32px)]">
             <div className="relative h-[435px] w-full overflow-hidden">
-              <Image
-                src={ProductionPowerData[5].image}
-                alt={ProductionPowerData[5].paragraph}
-                fill
-                className="object-cover"
-              />
+              {typeof ProductionPowerData[5].image === 'string' && ProductionPowerData[5].image.endsWith('.mp4') ? (
+                <video
+                  src={ProductionPowerData[5].image}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="object-cover w-full h-full"
+                />
+              ) : (
+                <Image
+                  src={ProductionPowerData[5].image}
+                  alt={ProductionPowerData[5].paragraph}
+                  fill
+                  className="object-cover"
+                />
+              )}
             </div>
           </div>
-          <div
-            className="flex flex-col gap-4 w-1/3"
-          >
+          <div className="flex flex-col gap-4 w-1/3">
             <div className="relative h-[435px] w-full overflow-hidden">
-              <Image
-                src={ProductionPowerData[6].image}
-                alt={ProductionPowerData[6].paragraph}
-                fill
-                className="object-cover"
-              />
+              {typeof ProductionPowerData[6].image === 'string' && ProductionPowerData[6].image.endsWith('.mp4') ? (
+                <video
+                  src={ProductionPowerData[6].image}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="object-cover w-full h-full"
+                />
+              ) : (
+                <Image
+                  src={ProductionPowerData[6].image}
+                  alt={ProductionPowerData[6].paragraph}
+                  fill
+                  className="object-cover"
+                />
+              )}
             </div>
           </div>
         </div>

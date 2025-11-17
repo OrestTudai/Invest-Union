@@ -33,7 +33,11 @@ export const AboutInvestUnion = async ({ locale }: Props) => {
               {translations('paragraphs.paragraph2')}
             </p>
             <div className="md:max-w-[245px] xl:mt-[66px]">
-              <GreenButton buttonType={ButtonType.Outlined} buttonText={translations('moreAboutUs')} />
+              <GreenButton
+                link={`/${locale}/about-us`}
+                buttonType={ButtonType.Outlined}
+                buttonText={translations('moreAboutUs')}
+              />
             </div>
           </div>
         </div>

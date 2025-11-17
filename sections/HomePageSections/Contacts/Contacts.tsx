@@ -17,7 +17,7 @@ export const Contacts = async ({ locale, useSecondHeading = false, hasPaddingTop
   const contactsTranslations = await getTranslations({ locale, namespace: 'contacts' })
 
   return (
-    <section className={`${hasPaddingTop && `pt-[${paddingTop}px]`} pb-[100px] px-4 md:pb-[180px] md:px-10 xl:pb-[200px]`}>
+    <section id="contacts" className={`${hasPaddingTop && `pt-[${paddingTop}px]`} pb-[100px] px-4 md:pb-[180px] md:px-10 xl:pb-[200px]`}>
       <SectionContainer>
         <SectionName
           sectionName={

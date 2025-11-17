@@ -1,0 +1,1 @@
+export { ScrollToContacts as default } from './ScrollToContacts'

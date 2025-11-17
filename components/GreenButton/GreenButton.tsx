@@ -1,14 +1,24 @@
 import {ButtonType} from "@/components/GreenButton/types";
+import Link from "next/link";
 
 type Props = {
   buttonType: ButtonType;
+  link?: string;
   buttonText: string;
   className?: string;
   onClick?: () => void;
 }
 
-export const GreenButton = ({ buttonType, buttonText, className, onClick }: Props) => {
+export const GreenButton = ({ buttonType, buttonText, className, onClick, link }: Props) => {
   if (buttonType === ButtonType.Outlined) {
+    if (link) {
+      return (
+        <Link className={`flex justify-center items-center py-4 border-[1px] border-green uppercase text-green text-center min-w-full !w-full ${className}`} href={link}>
+          {buttonText}
+        </Link>
+      )
+    }
+
     return (
       <button onClick={onClick} className={`py-4 border-[1px] border-green uppercase text-green text-center w-full ${className}`}>
         {buttonText}
@@ -17,6 +27,13 @@ export const GreenButton = ({ buttonType, buttonText, className, onClick }: Prop
   }
 
   if (buttonType === ButtonType.Filled) {
+    if (link) {
+      return (
+        <Link className={`flex justify-center items-center py-4 bg-green uppercase text-white text-center !w-full min-w-full ${className}`} href={link}>
+          {buttonText}
+        </Link>
+      )
+    }
     return (
       <button onClick={onClick} className={`py-4 bg-green uppercase text-white text-center w-full ${className}`}>
         {buttonText}

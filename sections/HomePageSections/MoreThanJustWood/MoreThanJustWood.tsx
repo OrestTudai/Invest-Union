@@ -107,7 +107,11 @@ export const MoreThanJustWood = async ({ locale }: Props) => {
           </div>
         </div>
         <div className="md:max-w-[305px] md:mx-auto xl:mt-12">
-          <GreenButton buttonType={ButtonType.Outlined} buttonText={translations('watchAllGallery')} />
+          <GreenButton
+            link={`${locale}/gallery`}
+            buttonType={ButtonType.Outlined}
+            buttonText={translations('watchAllGallery')}
+          />
         </div>
       </SectionContainer>
     </section>

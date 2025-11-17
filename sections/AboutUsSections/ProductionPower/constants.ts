@@ -6,35 +6,41 @@ import {
   ProductionPowerSixthSm,
   ProductionPowerFifthSm
 } from "@/assets/images";
-import {DevelopBusinessBg} from "@/assets/gifs";
 
 export const ProductionPowerData = [
   {
     image: ProductionPowerFirstSm,
-    paragraph: 'Production Power 1'
+    paragraph: "Production Power 1",
+    isVideo: false,
   },
   {
-    image: DevelopBusinessBg,
-    paragraph: 'Production Power 2'
+    image: "/videos/factory.mp4",
+    paragraph: "Production Power 2",
+    isVideo: true,
   },
   {
     image: ProductionPowerSecondSm,
-    paragraph: 'Production Power 3'
+    paragraph: "Production Power 3",
+    isVideo: false,
   },
   {
     image: ProductionPowerThirdSm,
-    paragraph: 'Production Power 4'
+    paragraph: "Production Power 4",
+    isVideo: false,
   },
   {
     image: ProductionPowerFourthSm,
-    paragraph: 'Production Power 5'
+    paragraph: "Production Power 5",
+    isVideo: false,
   },
   {
     image: ProductionPowerFifthSm,
-    paragraph: 'Produc  tion Power 6'
+    paragraph: "Production Power 6",
+    isVideo: false,
   },
   {
     image: ProductionPowerSixthSm,
-    paragraph: 'Production Power 7'
+    paragraph: "Production Power 7",
+    isVideo: false,
   },
-]
+];
