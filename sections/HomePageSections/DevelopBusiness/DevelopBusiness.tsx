@@ -19,6 +19,7 @@ export const DevelopBusiness = async ({ locale }: Props) => {
         loop
         muted
         playsInline
+        preload="auto"
       >
         <source src="/videos/factory.mp4" type="video/mp4" />
       </video>
