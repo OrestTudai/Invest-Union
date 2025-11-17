@@ -1,25 +1,35 @@
-import { AboutUsInvestUnionWoodBg } from "@/assets/images";
 import Image from "next/image";
+import { AboutUsInvestUnionWoodBg } from "@/assets/images";
 import { ArrowsButton } from "@/assets/svg";
-import {SectionContainer} from "@/components";
-import {getTranslations} from "next-intl/server";
+import { SectionContainer } from "@/components";
+import { getTranslations } from "next-intl/server";
 
 type Props = {
   locale: string;
-}
+};
 
 export const AboutUsHero = async ({ locale }: Props) => {
-  const translations = await getTranslations({ locale, namespace: 'historyHero' })
+  const translations = await getTranslations({
+    locale,
+    namespace: "historyHero",
+  });
 
   return (
-    <section
-      className="bg-cover bg-center"
-      style={{ backgroundImage: `url(${AboutUsInvestUnionWoodBg.src})` }}
-    >
-      <SectionContainer className="flex flex-col items-center pt-[260px] pb-12 px-4 md:px-10 md:pt-[520px] md:pb-[100px] xl:pt-[322px]">
+    <section className="relative bg-cover bg-center overflow-hidden">
+      <Image
+        src={AboutUsInvestUnionWoodBg}
+        alt="About us background hero"
+        fill
+        priority
+        className="object-cover object-center"
+      />
+
+      <SectionContainer className="relative z-10 flex flex-col items-center pt-[260px] pb-12 px-4 md:px-10 md:pt-[520px] md:pb-[100px] xl:pt-[322px]">
         <h1 className="font-libre text-center text-[#F5F5F5] !text-[90px] leading-none md:hidden">
           Invest Union
         </h1>
+
+        {/* Desktop Title */}
         <h1 className="hidden font-libre text-center text-[#F5F5F5] !text-[98px] leading-none md:block">
           Invest-Union
         </h1>
@@ -30,7 +40,7 @@ export const AboutUsHero = async ({ locale }: Props) => {
             textShadow: "3.94px 3.94px 7.87px rgba(0, 0, 0, 0.5)",
           }}
         >
-          {translations('paragraph')}
+          {translations("paragraph")}
         </h4>
 
         <Image
