@@ -11,30 +11,30 @@ import {DevelopBusinessBg} from "@/assets/gifs";
 export const ProductionPowerData = [
   {
     image: ProductionPowerFirstSm,
-    paragraph: 'Ullamcorper natoque viverra porttitor arcu tortor.'
+    paragraph: 'Production Power 1'
   },
   {
     image: DevelopBusinessBg,
-    paragraph: 'Ullamcorper natoque viverra porttitor arcu tortor.'
+    paragraph: 'Production Power 2'
   },
   {
     image: ProductionPowerSecondSm,
-    paragraph: 'Ullamcorper natoque viverra porttitor arcu tortor.'
+    paragraph: 'Production Power 3'
   },
   {
     image: ProductionPowerThirdSm,
-    paragraph: 'Ullamcorper natoque viverra porttitor arcu tortor.'
+    paragraph: 'Production Power 4'
   },
   {
     image: ProductionPowerFourthSm,
-    paragraph: 'Ullamcorper natoque viverra porttitor arcu tortor.'
+    paragraph: 'Production Power 5'
   },
   {
     image: ProductionPowerFifthSm,
-    paragraph: 'Ullamcorper natoque viverra porttitor arcu tortor.'
+    paragraph: 'Produc  tion Power 6'
   },
   {
     image: ProductionPowerSixthSm,
-    paragraph: 'Ullamcorper natoque viverra porttitor arcu tortor.'
+    paragraph: 'Production Power 7'
   },
 ]

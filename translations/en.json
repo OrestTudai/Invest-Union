@@ -166,13 +166,21 @@
       "line1": "Ready to create a project",
       "line2": "from 100-year-old oak?"
     },
+    "secondHeading": {
+      "line1": "Let’s unite",
+      "line2": "our efforts for",
+      "line3": "success",
+      "line4": ".",
+      "line5": "Fill out the form."
+    },
     "paragraph": "We are the only company in Ukraine producing three-layer furniture panels from reclaimed oak to European standards. Leave a request, and we will help you create a unique interior.",
     "nameField": "Name",
     "companyNameField": "Company Name",
     "emailField": "Email",
     "phoneField": "Phone",
     "messageField": "Message",
-    "buttonText": "Get an offer"
+    "buttonText": "Get an offer",
+    "address": "Address"
   },
 
 

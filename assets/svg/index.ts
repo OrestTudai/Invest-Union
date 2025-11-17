@@ -11,6 +11,7 @@ import Mail from './mail.svg'
 import Phone from './phone.svg'
 import LogoColoredBlack from './logo-colored-black.svg'
 import ArrowsButton from './arrows-bottom.svg'
+import AddressIcon from './address-icon.svg'
 
 export {
   Burger,
@@ -26,4 +27,5 @@ export {
   Phone,
   LogoColoredBlack,
   ArrowsButton,
+  AddressIcon,
 }

@@ -44,7 +44,6 @@ export const ProductionPower = async ({ locale }: Props) => {
                   className="object-cover"
                 />
               </div>
-              <p>{item.paragraph}</p>
             </div>
           ))}
         </div>
@@ -66,13 +65,12 @@ export const ProductionPower = async ({ locale }: Props) => {
                     className="object-cover"
                   />
                 </div>
-                <p>{item.paragraph}</p>
               </div>
             );
           })}
         </div>
 
-        <div className="hidden flex-col gap-4 my-8 md:flex xl:hidden">
+        <div className="hidden flex-col gap-4 my-4 md:flex xl:hidden">
           <div className="relative w-full h-[340px] overflow-hidden">
             <Image
               src={ProductionPowerData[1].image}
@@ -81,10 +79,9 @@ export const ProductionPower = async ({ locale }: Props) => {
               className="object-cover"
             />
           </div>
-          <p>{ProductionPowerData[1].paragraph}</p>
         </div>
 
-        <div className="hidden md:grid grid-cols-2 gap-x-5 gap-y-8 xl:hidden">
+        <div className="hidden md:grid grid-cols-2 gap-x-5 gap-y-5 xl:hidden">
           {ProductionPowerData.slice(3).map((item, index) => {
             if (index === 6) return null;
 
@@ -101,7 +98,6 @@ export const ProductionPower = async ({ locale }: Props) => {
                     className="object-cover"
                   />
                 </div>
-                <p>{item.paragraph}</p>
               </div>
             );
           })}
@@ -118,10 +114,9 @@ export const ProductionPower = async ({ locale }: Props) => {
                 className="object-cover"
               />
             </div>
-            <p>{ProductionPowerData[0].paragraph}</p>
           </div>
           <div
-            className="flex flex-col gap-4 w-2/3"
+            className="flex flex-col gap-4 w-[calc(66%+32px)]"
           >
             <div className="relative h-[435px] w-full overflow-hidden">
               <Image
@@ -131,10 +126,9 @@ export const ProductionPower = async ({ locale }: Props) => {
                 className="object-cover"
               />
             </div>
-            <p>{ProductionPowerData[1].paragraph}</p>
           </div>
         </div>
-        <div className="hidden xl:flex gap-5 mt-10">
+        <div className="hidden xl:flex gap-5 mt-5">
           <div
             className="flex flex-col gap-4 w-1/3"
           >
@@ -146,7 +140,6 @@ export const ProductionPower = async ({ locale }: Props) => {
                 className="object-cover"
               />
             </div>
-            <p>{ProductionPowerData[3].paragraph}</p>
           </div>
           <div
             className="flex flex-col gap-4 w-1/3"
@@ -159,7 +152,6 @@ export const ProductionPower = async ({ locale }: Props) => {
                 className="object-cover"
               />
             </div>
-            <p>{ProductionPowerData[4].paragraph}</p>
           </div>
           <div
             className="flex flex-col gap-4 w-1/3"
@@ -172,12 +164,11 @@ export const ProductionPower = async ({ locale }: Props) => {
                 className="object-cover"
               />
             </div>
-            <p>{ProductionPowerData[2].paragraph}</p>
           </div>
         </div>
-        <div className="hidden xl:flex gap-5 mt-10">
+        <div className="hidden xl:flex gap-5 mt-5">
           <div
-            className="flex flex-col gap-4 w-2/3"
+            className="flex flex-col gap-4 w-[calc(66%+32px)]"
           >
             <div className="relative h-[435px] w-full overflow-hidden">
               <Image
@@ -187,7 +178,6 @@ export const ProductionPower = async ({ locale }: Props) => {
                 className="object-cover"
               />
             </div>
-            <p>{ProductionPowerData[5].paragraph}</p>
           </div>
           <div
             className="flex flex-col gap-4 w-1/3"
@@ -200,7 +190,6 @@ export const ProductionPower = async ({ locale }: Props) => {
                 className="object-cover"
               />
             </div>
-            <p>{ProductionPowerData[6].paragraph}</p>
           </div>
         </div>
 

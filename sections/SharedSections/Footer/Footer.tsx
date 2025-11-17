@@ -19,7 +19,7 @@ export const Footer = async ({ locale }: Props) => {
         <div className="flex flex-col gap-10 xl:hidden">
           <div className="flex justify-between items-center">
             <Image src={LogoColored} alt={'Invest Union colored logotype'} />
-            <p className="hidden md:!text-[20px] md:block">{translations('address')}</p>
+            <p className="hidden px-4 md:!text-[20px] md:block">{translations('address')}</p>
             <GoToTopButton />
           </div>
           <p className="md:hidden">{translations('address')}</p>
@@ -34,7 +34,7 @@ export const Footer = async ({ locale }: Props) => {
             <div className="flex flex-col text-lightGray">
               <Link className="w-fit p-2" href="/">Facebook</Link>
               <Link className="w-fit p-2" href="/">Instagram</Link>
-              <Link className="w-fit p-2" href="/">Tik Tok</Link>
+              {/*<Link className="w-fit p-2" href="/">Tik Tok</Link>*/}
             </div>
           </div>
           <div className="flex flex-col gap-3 text-lightGray md:w-[433px] md:ml-auto">
@@ -43,15 +43,15 @@ export const Footer = async ({ locale }: Props) => {
           </div>
           <div className="flex flex-col gap-4 text-lightGray md:w-[433px] md:ml-auto">
             {/*<Link className="w-fit" href={'/'}>Політика конфіденційності</Link>*/}
-            <span>© 2025 Invest-Union. Всі права захищено.</span>
+            <span>© 2025 Invest-Union. {translations('rightsReserved')}</span>
           </div>
         </div>
         <div className="hidden xl:flex items-start justify-between">
           <div className="flex justify-between items-start">
             <Image src={LogoColored} alt={'Invest Union colored logotype'} />
             <div className="flex flex-col gap-[130px] ml-[123px]">
-              <p className="md:!text-[20px]">{translations('address')}</p>
-              <div className="flex flex-col gap-3 text-lightGray md:w-[433px] md:ml-auto">
+              <p className="md:!text-[20px] md:px-2">{translations('address')}</p>
+              <div className="flex flex-col gap-3 text-lightGray md:w-[433px] md:ml-auto xl:ml-0">
                 <span className="w-fit underline">{translations('phone')}</span>
                 <span className="w-fit underline">ltd.invest.union@gmail.com</span>
               </div>
@@ -69,7 +69,7 @@ export const Footer = async ({ locale }: Props) => {
               <div className="flex flex-col text-lightGray">
                 <Link className="w-fit p-2" href="/">Facebook</Link>
                 <Link className="w-fit p-2" href="/">Instagram</Link>
-                <Link className="w-fit p-2" href="/">Tik Tok</Link>
+                {/*<Link className="w-fit p-2" href="/">Tik Tok</Link>*/}
               </div>
             </div>
             <div className="flex flex-col gap-4 text-lightGray md:w-[433px] md:ml-auto text-[14px]">

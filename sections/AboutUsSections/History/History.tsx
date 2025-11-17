@@ -19,7 +19,7 @@ export const History = async ({ locale }: Props) => {
           sectionName={
             <h2 className="hidden mb-10 md:mb-20 xl:block">{translations('heading')}</h2>
           }
-          postsCount={`(2000-${year})`}
+          postsCount={`(2000-${year - 1})`}
         />
         <h2 className="mt-8 mb-10 md:mt-10 md:mb-[60px] xl:hidden">{translations('heading')}</h2>
         <div className="flex flex-col md:flex-row md:gap-4 md:mb-10 xl:justify-between xl:mb-[100px]">
