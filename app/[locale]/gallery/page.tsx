@@ -8,7 +8,7 @@ export default async function GalleryPage({params}: PageProps<'/[locale]'>) {
       <Gallery locale={locale} />
       <DevelopBusiness locale={locale} />
       <section className="md:pt-[180px]">
-        <Contacts locale={locale} hasPaddingTop />
+        <Contacts hasPaddingTop />
       </section>
     </>
   )

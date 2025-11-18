@@ -3,13 +3,14 @@ import Link from "next/link";
 
 type Props = {
   buttonType: ButtonType;
+  type?: 'submit' | 'button';
   link?: string;
   buttonText: string;
   className?: string;
   onClick?: () => void;
 }
 
-export const GreenButton = ({ buttonType, buttonText, className, onClick, link }: Props) => {
+export const GreenButton = ({ buttonType, type = 'button', buttonText, className, onClick, link }: Props) => {
   if (buttonType === ButtonType.Outlined) {
     if (link) {
       return (
@@ -20,7 +21,7 @@ export const GreenButton = ({ buttonType, buttonText, className, onClick, link }
     }
 
     return (
-      <button onClick={onClick} className={`py-4 border-[1px] border-green uppercase text-green text-center w-full ${className}`}>
+      <button type={type} onClick={onClick} className={`py-4 border-[1px] border-green uppercase text-green text-center w-full ${className}`}>
         {buttonText}
       </button>
     )
@@ -35,7 +36,7 @@ export const GreenButton = ({ buttonType, buttonText, className, onClick, link }
       )
     }
     return (
-      <button onClick={onClick} className={`py-4 bg-green uppercase text-white text-center w-full ${className}`}>
+      <button type={type} onClick={onClick} className={`py-4 bg-green uppercase text-white text-center w-full ${className}`}>
         {buttonText}
       </button>
     )

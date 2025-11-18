@@ -175,7 +175,10 @@
     "phoneField": "Телефон",
     "messageField": "Повідомлення",
     "buttonText": "Отримати пропозицію",
-    "address": "Адреса"
+    "address": "Адреса",
+    "fieldRequired": "Це поле обов'язкове",
+    "invalidEmail": "Неправильний емейл",
+    "invalidPhone": "Неправильний номер телефону"
   },
 
   "footer": {

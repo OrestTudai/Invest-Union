@@ -7,7 +7,6 @@ export default async function ContactsPage ({params}: PageProps<'/[locale]'>) {
     <>
      <Contacts
        useSecondHeading
-       locale={locale}
        hasPaddingTop
        paddingTop={179}
      />

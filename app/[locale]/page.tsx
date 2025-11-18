@@ -20,7 +20,7 @@ export default async function Home({params}: PageProps<'/[locale]'>) {
       <DevelopBusiness locale={locale} />
       <QuestionsAndAnswers locale={locale} />
       {/*<ReadMoreInteresting />*/}
-      <Contacts locale={locale} />
+      <Contacts />
     </>
   );
 }

@@ -20,7 +20,7 @@ export default async function AboutUsPage({params}: PageProps<'/[locale]'>) {
       <ProductionPower locale={locale} />
       <QuestionsAndAnswers locale={locale} />
       {/*<ReadMoreInteresting />*/}
-      <Contacts locale={locale} />
+      <Contacts />
     </>
   )
 }

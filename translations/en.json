@@ -180,7 +180,10 @@
     "phoneField": "Phone",
     "messageField": "Message",
     "buttonText": "Get an offer",
-    "address": "Address"
+    "address": "Address",
+    "fieldRequired": "This field is required",
+    "invalidEmail": "Invalid email",
+    "invalidPhone": "Invalid phone number"
   },
 
 
