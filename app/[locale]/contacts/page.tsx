@@ -1,8 +1,6 @@
 import {Contacts} from "@/sections";
 
-export default async function ContactsPage ({params}: PageProps<'/[locale]'>) {
-  const { locale } = await params
-
+export default async function ContactsPage () {
   return (
     <>
      <Contacts
