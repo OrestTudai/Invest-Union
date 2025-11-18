@@ -5,7 +5,7 @@ import { CrossIcon, LogoColoredBlack } from "@/assets/svg";
 import Link from "next/link";
 import { GreenButton } from "@/components";
 import { ButtonType } from "@/components/GreenButton";
-import {usePathname} from "next/navigation";
+import {redirect, usePathname} from "next/navigation";
 import {useTranslations} from "next-intl";
 
 type Props = {
@@ -96,6 +96,10 @@ export const BurgerMenu = ({ toggleMenu, locale, enSwitchClick, ukSwitchClick }:
 
       <div className="shrink-0 pt-10 pb-12 px-4 bg-black">
         <GreenButton
+          onClick={() => {
+            toggleMenu()
+            redirect(`${locale}/contacts`)
+          }}
           buttonType={ButtonType.Filled}
           buttonText={translations('buttonText')}
         />
