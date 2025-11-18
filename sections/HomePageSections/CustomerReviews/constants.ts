@@ -6,17 +6,17 @@ export default async function getCustomerReviewData (locale: string) {
   return [
     {
       image: '',
-      name: locale === 'uk' ? 'Ім’я 1' : 'Name 1',
+      name: locale === 'uk' ? 'Стівен' : 'Steven',
       reviewText: translations('list.first')
     },
     {
       image: '',
-      name: locale === 'uk' ? 'Ім’я 2' : 'Name 2',
+      name: locale === 'uk' ? 'Джон' : 'John',
       reviewText: translations('list.second')
     },
     {
       image: '',
-      name: locale === 'uk' ? 'Ім’я 3' : 'Name 3',
+      name: locale === 'uk' ? 'Іван' : 'Ivan',
       reviewText: translations('list.third')
     },
   ]
