@@ -25,7 +25,6 @@ export const Gallery = async ({ locale }: Props) => {
           <span className="text-[14px] font-medium">(25)</span>
         </div>
 
-        {/* MOBILE GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:hidden">
           {GalleryData.map((item, index) => (
             <div key={`gallery-item-${index}`} className="flex flex-col gap-2">
@@ -42,7 +41,6 @@ export const Gallery = async ({ locale }: Props) => {
           ))}
         </div>
 
-        {/* FIRST LARGE ITEM */}
         <div className="flex flex-col gap-2 w-fit mb-8 md:ml-auto xl:w-2/3">
           <div
             className={`${containerBaseClasses} w-[334px] h-[340px] xl:w-full xl:h-[435px]`}
@@ -59,7 +57,6 @@ export const Gallery = async ({ locale }: Props) => {
           </p>
         </div>
 
-        {/* MIDDLE GRID (TABLET) */}
         <div className="hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-8 md:grid xl:hidden">
           {GalleryData.slice(1).map((item, index) => (
             <div key={`gallery-item-${index}`} className="flex flex-col gap-2">
@@ -76,7 +73,6 @@ export const Gallery = async ({ locale }: Props) => {
           ))}
         </div>
 
-        {/* DESKTOP ROW 1 */}
         <div className="hidden xl:flex gap-5 mt-10">
           {GalleryData.slice(1, 4).map((item, index) => (
             <div key={`gallery-item-${index}`} className="flex flex-col gap-2 w-full">
@@ -120,7 +116,6 @@ export const Gallery = async ({ locale }: Props) => {
           </div>
         </div>
 
-        {/* DESKTOP ROW 3 */}
         <div className="hidden xl:flex gap-5 mt-10">
           {GalleryData.slice(6, 9).map((item, index) => (
             <div key={`gallery-item-${index}`} className="flex flex-col gap-2 w-full">
@@ -137,7 +132,6 @@ export const Gallery = async ({ locale }: Props) => {
           ))}
         </div>
 
-        {/* DESKTOP ROW 4 */}
         <div className="hidden xl:flex gap-5 mt-10">
           <div className="flex flex-col gap-2 w-1/3">
             <div className={`${containerBaseClasses} w-full h-[440px]`}>

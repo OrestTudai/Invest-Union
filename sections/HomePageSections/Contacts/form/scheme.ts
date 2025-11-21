@@ -15,6 +15,6 @@ export const getValidationSchema = ({ translations }: Props) =>
     phone: yup
       .string()
       .required(translations("fieldRequired"))
-      .matches(/^[0-9+()\- ]+$/, translations("invalidPhone")),
+      .matches(/^(?=.*\d)[0-9+()\- ]+$/, translations("invalidPhone")),
     message: yup.string().required(translations("fieldRequired")),
   });

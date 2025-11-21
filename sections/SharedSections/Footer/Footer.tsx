@@ -43,7 +43,7 @@ export const Footer = async ({ locale }: Props) => {
           </div>
           <div className="flex flex-col gap-4 text-lightGray md:w-[433px] md:ml-auto">
             {/*<Link className="w-fit" href={'/'}>Політика конфіденційності</Link>*/}
-            <span>© 2025 Invest-Union. {translations('rightsReserved')}</span>
+            <span>© {year} {translations('rightsReserved')}</span>
           </div>
         </div>
         <div className="hidden xl:flex items-start justify-between">
