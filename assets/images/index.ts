@@ -47,6 +47,9 @@ import GalleryTwentySecondImage from './ gallery-twentysecond-image.jpg'
 import GalleryTwentyThirdImage from './gallery-twentythird-image.jpg'
 import GalleryTwentyFourthImage from './gallery-twentyfourth-image.jpg'
 import ArrowSwiperButton from './arrow-swiper-button.svg'
+import FirstPerson from './person-first.jpg'
+import SecondPerson from './person-second.jpg'
+import ThirdPerson from './person-third.jpg'
 
 export {
   HomeHeroBgSm,
@@ -98,4 +101,7 @@ export {
   GalleryTwentyThirdImage,
   GalleryTwentyFourthImage,
   ArrowSwiperButton,
+  FirstPerson,
+  SecondPerson,
+  ThirdPerson,
 }
