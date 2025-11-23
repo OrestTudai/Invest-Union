@@ -27,89 +27,95 @@ export const GalleryData = [
   {
     image: GalleryFirstImage,
     paragraph: 'Фальшбалки з автентичної, тесаної вручну деревини хвойних порід або дуба, будь-якої довжини та січення.'
-  },
-  {
-    image: GallerySecondImage,
-    paragraph: '3-ох шарова дубова плита ( верхня частина, тесана вручну) для меблевих фасадів та інтерʼєрів.'
-  },
-  {
-    image: GalleryThirdImage,
-    paragraph: '3-ох шарова плита хвойних порід (мозаїка), для інтерʼєру, також використовується для виготовлення дверей.'
+      //False beams made of authentic, hand-hewn softwood or oak, of any length and cross-section.
   },
   {
     image: GalleryFourthImage,
+    paragraph: '3-ох шарова дубова плита ( верхня частина, тесана вручну) для меблевих фасадів та інтерʼєрів.'
+    // Three-layer oak board (top layer hand-hewn), for furniture facades and interiors.
+  },
+  {
+    image: GallerySecondImage,
+    paragraph: '3-ох шарова плита хвойних порід (мозаїка), для інтерʼєру, також використовується для виготовлення дверей.'
+    //Three-layer softwood board (mosaic), for interiors, also used for door production.
+  },
+  {
+    image: GalleryThirdImage,
     paragraph: '3-ох шарова дубова інженерна дошка, паркетна дошка, основа хвоя або дуб'
+    //Three-layer oak engineered board, parquet board, base of softwood or oak.
   },
   {
     image: GalleryFifthImage,
     paragraph: '3-ох шарова дубова плита, основа дуб або хвоя ( лицева - середня частина з характерними стародавніми тріщинами). Використовується, як фасади меблів та інтерʼєрів'
+    //Three-layer oak board, base of oak or softwood (front – middle layer with characteristic ancient cracks). Used for furniture facades and interiors.
   },
   {
     image: GallerySixthImage,
-    paragraph: '3-ох шарова плита хвойних порід для влаштування інтерʼєрів, дверей та меблевих фасадів.r arcu tortor.'
+    paragraph: '3-ох шарова плита хвойних порід для влаштування інтерʼєрів, дверей та меблевих фасадів.'
+    //Three-layer softwood board for interiors, doors, and furniture facades.
   },
   {
     image: GallerySeventhImage,
-    paragraph: 'Ullamcorper natoque viverra porttitor arcu tortor.'
+    paragraph: ''
   },
   {
     image: GalleryEighthImage,
-    paragraph: 'Ullamcorper natoque viverra porttitor arcu tortor.'
+    paragraph: ''
   },
   {
     image: GalleryNinethImage,
-    paragraph: 'Ullamcorper natoque viverra porttitor arcu tortor.'
+    paragraph: ''
   },
   {
     image: GalleryTenthImage,
-    paragraph: 'Ullamcorper natoque viverra porttitor arcu tortor.'
+    paragraph: ''
   },
   {
     image: GalleryEleventhImage,
-    paragraph: 'Ullamcorper natoque viverra porttitor arcu tortor.'
+    paragraph: ''
   },
   {
     image: GalleryTwelfthImage,
-    paragraph: 'Фальшбалки з автентичної, тесаної вручну деревини хвойних порід або дуба, будь-якої довжини та січення.'
+    paragraph: ''
   },
   {
     image: GalleryThirteenthImage,
-    paragraph: '3-ох шарова дубова плита ( верхня частина, тесана вручну) для меблевих фасадів та інтерʼєрів.'
+    paragraph: ''
   },
   {
     image: GalleryFourteenthImage,
-    paragraph: '3-ох шарова плита хвойних порід (мозаїка), для інтерʼєру, також використовується для виготовлення дверей.'
+    paragraph: ''
   },
   {
     image: GalleryFifteenthImage,
-    paragraph: '3-ох шарова дубова інженерна дошка, паркетна дошка, основа хвоя або дуб'
+    paragraph: ''
   },
   {
     image: GallerySixteenthImage,
-    paragraph: '3-ох шарова дубова плита, основа дуб або хвоя ( лицева - середня частина з характерними стародавніми тріщинами). Використовується, як фасади меблів та інтерʼєрів'
+    paragraph: ''
   },
   {
     image: GallerySeventeenthImage,
-    paragraph: '3-ох шарова плита хвойних порід для влаштування інтерʼєрів, дверей та меблевих фасадів.r arcu tortor.'
+    paragraph: ''
   },
   {
     image: GalleryEighteenthImage,
-    paragraph: 'Ullamcorper natoque viverra porttitor arcu tortor.'
+    paragraph: ''
   },
   {
     image: GalleryNineteenthImage,
-    paragraph: 'Ullamcorper natoque viverra porttitor arcu tortor.'
+    paragraph: ''
   },
   {
     image: GalleryTwentiethImage,
-    paragraph: 'Ullamcorper natoque viverra porttitor arcu tortor.'
+    paragraph: ''
   },
   {
     image: GalleryTwentyFirstImage,
-    paragraph: 'Ullamcorper natoque viverra porttitor arcu tortor.'
+    paragraph: ''
   },
   {
     image: GalleryTwentySecondImage,
-    paragraph: 'Ullamcorper natoque viverra porttitor arcu tortor.'
+    paragraph: ''
   },
 ]

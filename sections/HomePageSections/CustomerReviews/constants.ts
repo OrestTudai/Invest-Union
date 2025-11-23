@@ -7,7 +7,7 @@ export default async function getCustomerReviewData (locale: string) {
   return [
     {
       image: FirstPerson,
-      name: locale === 'uk' ? 'Стівен' : 'Steven',
+      name: locale === 'uk' ? 'Юрій' : 'Yuri',
       reviewText: translations('list.first')
     },
     {

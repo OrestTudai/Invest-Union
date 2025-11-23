@@ -29,7 +29,7 @@ export const MoreThanJustWood = async ({ locale }: Props) => {
             </h2>
           }
           heading={translations("title")}
-          postsCount={"(25+)"}
+          postsCount={"(22+)"}
         />
 
         <h2 className="mt-8 mb-10 md:mt-10 md:mb-[60px] xl:hidden">
