@@ -12,6 +12,7 @@ import Phone from './phone.svg'
 import LogoColoredBlack from './logo-colored-black.svg'
 import ArrowsButton from './arrows-bottom.svg'
 import AddressIcon from './address-icon.svg'
+import PaginationArrow from './pagination-arrow.svg'
 
 export {
   Burger,
@@ -28,4 +29,5 @@ export {
   LogoColoredBlack,
   ArrowsButton,
   AddressIcon,
+  PaginationArrow,
 }

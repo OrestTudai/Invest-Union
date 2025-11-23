@@ -22,17 +22,30 @@ import ProductionPowerThirdSm from './production-power-third-sm.png'
 import ProductionPowerFourthSm from './production-power-fourth-sm.png'
 import ProductionPowerFifthSm from './production-power-fifth-sm.png'
 import ProductionPowerSixthSm from './production-power-sixth-sm.png'
-import GalleryFirstImage from './gallery-first-image.png'
-import GallerySecondImage from './gallery-second-image.png'
-import GalleryThirdImage from './gallery-third-image.png'
-import GalleryFourthImage from './gallery-fourth-image.png'
-import GalleryFifthImage from './gallery-fifth-image.png'
-import GallerySixthImage from './gallery-sixth-image.png'
-import GallerySeventhImage from './gallery-seventh-image.png'
-import GalleryEighthImage from './gallery-eighth-image.png'
-import GalleryNinethImage from './gallery-nineth-image.png'
-import GalleryTenthImage from './gallery-tenth-image.png'
-import GalleryEleventhImage from './gallery-image-eleventh.png'
+import GalleryFirstImage from './gallery-first-image.jpg'
+import GallerySecondImage from './gallery-second-image.jpg'
+import GalleryThirdImage from './gallery-third-image.jpg'
+import GalleryFourthImage from './gallery-fourth-image.jpg'
+import GalleryFifthImage from './gallery-fifth-image.jpg'
+import GallerySixthImage from './gallery-sixth-image.jpg'
+import GallerySeventhImage from './gallery-seventh-image.jpg'
+import GalleryEighthImage from './gallery-eighth-image.jpg'
+import GalleryNinethImage from './gallery-nineth-image.jpg'
+import GalleryTenthImage from './gallery-tenth-image.jpg'
+import GalleryEleventhImage from './gallery-image-eleventh.jpg'
+import GalleryTwelfthImage from './gallery-twelfth-image.jpg'
+import GalleryThirteenthImage from './gallery-thirteenth-image.jpg'
+import GalleryFourteenthImage from './gallery-fourteenth-image.jpg'
+import GalleryFifteenthImage from './gallery-fifteenth-image.jpg'
+import GallerySixteenthImage from './gallery-sixteenth-image.jpg'
+import GallerySeventeenthImage from './gallery-seventeenth-image.jpg'
+import GalleryEighteenthImage from './gallery-eighteenth-image.jpg'
+import GalleryNineteenthImage from './gallery-nineteenth-image.jpg'
+import GalleryTwentiethImage from './gallery-twentieth-image.jpg'
+import GalleryTwentyFirstImage from './gallery-twentyfirst-image.jpg'
+import GalleryTwentySecondImage from './ gallery-twentysecond-image.jpg'
+import GalleryTwentyThirdImage from './gallery-twentythird-image.jpg'
+import GalleryTwentyFourthImage from './gallery-twentyfourth-image.jpg'
 import ArrowSwiperButton from './arrow-swiper-button.svg'
 
 export {
@@ -71,5 +84,18 @@ export {
   GalleryNinethImage,
   GalleryTenthImage,
   GalleryEleventhImage,
+  GalleryTwelfthImage,
+  GalleryThirteenthImage,
+  GalleryFourteenthImage,
+  GalleryFifteenthImage,
+  GallerySixteenthImage,
+  GallerySeventeenthImage,
+  GalleryEighteenthImage,
+  GalleryNineteenthImage,
+  GalleryTwentiethImage,
+  GalleryTwentyFirstImage,
+  GalleryTwentySecondImage,
+  GalleryTwentyThirdImage,
+  GalleryTwentyFourthImage,
   ArrowSwiperButton,
 }
