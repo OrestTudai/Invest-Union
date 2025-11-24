@@ -13,6 +13,7 @@ import LogoColoredBlack from './logo-colored-black.svg'
 import ArrowsButton from './arrows-bottom.svg'
 import AddressIcon from './address-icon.svg'
 import PaginationArrow from './pagination-arrow.svg'
+import ClosePopup from './close-popup.svg'
 
 export {
   Burger,
@@ -30,4 +31,5 @@ export {
   ArrowsButton,
   AddressIcon,
   PaginationArrow,
+  ClosePopup,
 }

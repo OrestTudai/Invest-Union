@@ -33,7 +33,12 @@ export const Footer = async ({ locale }: Props) => {
             </div>
             <div className="flex flex-col text-lightGray">
               <Link className="w-fit p-2" href="/">Facebook</Link>
-              <Link className="w-fit p-2" href="/">Instagram</Link>
+              <Link
+                className="w-fit p-2"
+                href="https://www.instagram.com/invest_union_ltd?igsh=dnJueGd5cXUzMWE="
+              >
+                Instagram
+              </Link>
               {/*<Link className="w-fit p-2" href="/">Tik Tok</Link>*/}
             </div>
           </div>
@@ -68,7 +73,12 @@ export const Footer = async ({ locale }: Props) => {
               </div>
               <div className="flex flex-col text-lightGray">
                 <Link className="w-fit p-2" href="/">Facebook</Link>
-                <Link className="w-fit p-2" href="/">Instagram</Link>
+                <Link
+                  className="w-fit p-2"
+                  href="https://www.instagram.com/invest_union_ltd?igsh=dnJueGd5cXUzMWE="
+                >
+                  Instagram
+                </Link>
                 {/*<Link className="w-fit p-2" href="/">Tik Tok</Link>*/}
               </div>
             </div>

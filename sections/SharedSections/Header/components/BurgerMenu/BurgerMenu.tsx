@@ -110,7 +110,12 @@ export const BurgerMenu = ({ toggleMenu, locale, enSwitchClick, ukSwitchClick }:
           </div>
           <div className="flex flex-col">
             <Link className="w-fit p-2 text-white" href="/">Facebook</Link>
-            <Link className="w-fit p-2 text-white" href="/">Instagram</Link>
+            <Link
+              className="w-fit p-2 text-white"
+              href="https://www.instagram.com/invest_union_ltd?igsh=dnJueGd5cXUzMWE="
+            >
+              Instagram
+            </Link>
           </div>
         </div>
         <span className="block mt-10 text-white">

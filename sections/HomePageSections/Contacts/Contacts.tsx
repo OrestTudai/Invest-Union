@@ -1,18 +1,53 @@
 "use client";
 
+import React, { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { GreenButton, SectionContainer, SectionName } from "@/components";
 import Image from "next/image";
-import { AddressIcon, Mail, Phone } from "@/assets/svg";
+import {AddressIcon, ClosePopup, Mail, Phone} from "@/assets/svg";
 import { ButtonType } from "@/components/GreenButton";
 import FormInput from "@/sections/HomePageSections/Contacts/components/FormInput";
 import { Controller } from "react-hook-form";
-import {useTranslations} from "next-intl";
-import {useContactsForm} from "@/sections/HomePageSections/Contacts/form";
+import { useTranslations } from "next-intl";
+import { useContactsForm } from "@/sections/HomePageSections/Contacts/form";
+import { FormValues } from "@/sections/HomePageSections/Contacts/form/types";
 
 type Props = {
   useSecondHeading?: boolean;
   hasPaddingTop?: boolean;
   paddingTop?: number;
+};
+
+const Popup: React.FC<{ onClose: () => void }> = ({ onClose }) => {
+  const translations = useTranslations("contacts")
+
+  useEffect(() => {
+    const originalStyle = window.getComputedStyle(document.body).overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = originalStyle;
+    };
+  }, []);
+
+  return createPortal(
+    <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center">
+      <div className="bg-white p-5 md:p-10 rounded-[2px] max-w-[300px] md:max-w-sm text-center relative">
+        <button
+          className="absolute top-[-32px] right-[-32px] w-8 h-8 text-white text-[32px] bg-[#1A1A1A33] flex items-center justify-center"
+          onClick={onClose}
+        >
+          <Image src={ClosePopup} alt={'Close popup'} />
+        </button>
+        <h4 className="font-medium mb-4 text-[20px]">
+          {translations("popupHeading")}
+        </h4>
+        <p className="font-inter">
+          {translations("popupParagraph")}
+        </p>
+      </div>
+    </div>,
+    document.body
+  );
 };
 
 export const Contacts = ({
@@ -23,7 +58,13 @@ export const Contacts = ({
   const footerTranslations = useTranslations("footer");
   const contactsTranslations = useTranslations("contacts");
 
-  const { control, errors, onSubmit, handleSubmit } = useContactsForm()
+  const { control, errors, onSubmit, handleSubmit } = useContactsForm();
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  const handleFormSubmit = async (data: FormValues) => {
+    await onSubmit(data);
+    setIsPopupVisible(true);
+  };
 
   return (
     <section
@@ -122,7 +163,7 @@ export const Contacts = ({
 
           <div className="xl:w-full">
             <form
-              onSubmit={handleSubmit(onSubmit)}
+              onSubmit={handleSubmit(handleFormSubmit)}
               className="flex flex-col gap-3 pt-4 mb-4 md:mb-6"
             >
               <div className="md:grid md:grid-cols-2 md:gap-4">
@@ -173,6 +214,8 @@ export const Contacts = ({
           </div>
         </div>
       </SectionContainer>
+
+      {isPopupVisible && <Popup onClose={() => setIsPopupVisible(false)} />}
     </section>
   );
 };

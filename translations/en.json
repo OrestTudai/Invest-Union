@@ -195,7 +195,10 @@
     "address": "Address",
     "fieldRequired": "This field is required",
     "invalidEmail": "Invalid email",
-    "invalidPhone": "Invalid phone number"
+    "invalidPhone": "Invalid phone number",
+    "popupHeading": "Thank you for your trust.",
+    "popupParagraph": "We are processing your request and will respond as soon as possible."
+
   },
 
 
