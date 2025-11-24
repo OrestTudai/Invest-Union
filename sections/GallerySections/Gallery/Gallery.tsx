@@ -1,14 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import { GalleryData } from "@/sections/GallerySections/Gallery/constants";
 import Image from "next/image";
 import { SectionContainer } from "@/components";
 import { useTranslations } from "next-intl";
 import {PaginationArrow} from "@/assets/svg";
+import {useGetGalleryData} from "@/sections/GallerySections/Gallery/constants";
 
 export const Gallery = () => {
   const translations = useTranslations("gallery");
+  const GalleryData = useGetGalleryData();
 
   const ITEMS_PER_PAGE = 11;
   const [page, setPage] = useState(1);
@@ -41,7 +42,7 @@ export const Gallery = () => {
               <div className={`${containerBaseClasses} w-full h-[340px]`}>
                 <Image
                   src={item.image}
-                  alt={item.paragraph}
+                  alt={item.paragraph || ''}
                   fill
                   className={imageBaseClasses}
                 />
@@ -58,7 +59,7 @@ export const Gallery = () => {
             >
               <Image
                 src={data[0].image}
-                alt={data[0].paragraph}
+                alt={data[0].paragraph || ''}
                 fill
                 className={imageBaseClasses}
               />
@@ -75,7 +76,7 @@ export const Gallery = () => {
               <div className={`${containerBaseClasses} w-full h-[340px]`}>
                 <Image
                   src={item.image}
-                  alt={item.paragraph}
+                  alt={item.paragraph || ''}
                   fill
                   className={imageBaseClasses}
                 />
@@ -91,7 +92,7 @@ export const Gallery = () => {
               <div className={`${containerBaseClasses} w-full h-[440px]`}>
                 <Image
                   src={item.image}
-                  alt={item.paragraph}
+                  alt={item.paragraph || ''}
                   fill
                   className={imageBaseClasses}
                 />
@@ -107,7 +108,7 @@ export const Gallery = () => {
               <div className={`${containerBaseClasses} w-full h-[440px]`}>
                 <Image
                   src={data[4].image}
-                  alt={data[4].paragraph}
+                  alt={data[4].paragraph || ''}
                   fill
                   className={imageBaseClasses}
                 />
@@ -121,7 +122,7 @@ export const Gallery = () => {
               <div className={`${containerBaseClasses} w-full h-[440px]`}>
                 <Image
                   src={data[5].image}
-                  alt={data[5].paragraph}
+                  alt={data[5].paragraph || ''}
                   fill
                   className={imageBaseClasses}
                 />
@@ -137,7 +138,7 @@ export const Gallery = () => {
               <div className={`${containerBaseClasses} w-full h-[440px]`}>
                 <Image
                   src={item.image}
-                  alt={item.paragraph}
+                  alt={item.paragraph || ''}
                   fill
                   className={imageBaseClasses}
                 />
@@ -153,7 +154,7 @@ export const Gallery = () => {
               <div className={`${containerBaseClasses} w-full h-[440px]`}>
                 <Image
                   src={data[9].image}
-                  alt={data[9].paragraph}
+                  alt={data[9].paragraph || ''}
                   fill
                   className={imageBaseClasses}
                 />
@@ -167,7 +168,7 @@ export const Gallery = () => {
               <div className={`${containerBaseClasses} w-full h-[440px]`}>
                 <Image
                   src={data[10].image}
-                  alt={data[10].paragraph}
+                  alt={data[10].paragraph || ''}
                   fill
                   className={imageBaseClasses}
                 />

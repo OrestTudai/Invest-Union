@@ -20,7 +20,13 @@
       "paragraph1": "We are the only producers in Ukraine of three-layer furniture panels made from reclaimed oak and coniferous wood, compliant with European standards. Our mission is to transform reclaimed timber into durable solutions for unique interiors. We combine the centuries-old history of wood with modern technologies to create materials that inspire architects, designers, and furniture makers. Each panel is not just a structural element, but a piece of aesthetics that conveys the character of a space.",
       "paragraph2": "Selection of raw materials, drying, gluing, and final finishing — everything is under our control to ensure stability, sustainability, and impeccable appearance. We do not simply produce wood — we create the foundation for ideas that live for decades."
     },
-    "moreAboutUs": "More about us"
+    "moreAboutUs": "More about us",
+    "firstPictureText": "Three-layer oak board (top layer hand-hewn), for furniture facades and interiors.",
+    "secondPictureText": "False beams made of authentic, hand-hewn softwood or oak, of any length and cross-section.",
+    "thirdPictureText": "Three-layer softwood board (mosaic), for interiors, also used for door production.",
+    "fourthPictureText": "Three-layer oak engineered board, parquet board, base of softwood or oak.",
+    "fifthPictureText": "Three-layer oak board, base of oak or softwood (front – middle layer with characteristic ancient cracks). Used for furniture facades and interiors.",
+    "sixthPictureText": "Three-layer softwood board for interiors, doors, and furniture facades."
   },
   "advantages": {
     "title": "Advantages",
@@ -55,7 +61,13 @@
       "line2": "than just a",
       "line3": "wood"
     },
-    "watchAllGallery": "Watch all gallery"
+    "watchAllGallery": "Watch all gallery",
+    "firstPictureText": "False beams made of authentic, hand-hewn softwood or oak, of any length and cross-section.",
+    "secondPictureText": "Three-layer oak board (top layer hand-hewn), for furniture facades and interiors.",
+    "thirdPictureText": "Three-layer softwood board (mosaic), for interiors, also used for door production.",
+    "fourthPictureText": "Three-layer oak engineered board, parquet board, base of softwood or oak.",
+    "fifthPictureText": "Three-layer oak board, base of oak or softwood (front – middle layer with characteristic ancient cracks). Used for furniture facades and interiors.",
+    "sixthPictureText": "Three-layer softwood board for interiors, doors, and furniture facades."
   },
 
   "testimonials": {

@@ -1,8 +1,7 @@
 import { GreenButton, SectionContainer, SectionName } from "@/components";
 import { ButtonType } from "@/components/GreenButton";
 import {
-  MoreThanJustWoodData,
-  MoreThanJustWoodDataXl,
+  getMoreThanJustWoodData, getMoreThanJustWoodDataXl,
 } from "@/sections/HomePageSections/MoreThanJustWood/constants";
 import MoreThanJustWoodCard from "@/sections/HomePageSections/MoreThanJustWood/components/MoreThanJustWoodCard";
 import Image from "next/image";
@@ -14,6 +13,8 @@ type Props = {
 
 export const MoreThanJustWood = async ({ locale }: Props) => {
   const translations = await getTranslations({ locale, namespace: "gallery" });
+  const MoreThanJustWoodData = await getMoreThanJustWoodData(locale)
+  const MoreThanJustWoodDataXl = await getMoreThanJustWoodDataXl(locale)
 
   return (
     <section className="pb-[100px] px-4 md:pb-[180px] md:px-10 xl:pb-[200px]">
