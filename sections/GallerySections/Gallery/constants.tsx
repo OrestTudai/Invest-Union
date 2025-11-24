@@ -22,7 +22,6 @@ import {
   GalleryTwentyFirstImage,
   GalleryTwentySecondImage
 } from "@/assets/images";
-import { getTranslations } from "next-intl/server";
 import {useTranslations} from "next-intl";
 
 const imagesOrder = [
