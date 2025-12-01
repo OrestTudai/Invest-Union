@@ -61,6 +61,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
+    <head>
+      <meta name="google-site-verification" content="0GdGxMr_5XQh49F0zxlTj7pUJh3aVaqmp8IxfBk5sPk" />
+    </head>
     <body className={`${inter.variable} ${libreCaslon.variable} antialiased`}>
     <NextIntlClientProvider locale={locale} messages={messages}>
       <Header />
