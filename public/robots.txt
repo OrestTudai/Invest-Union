@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /*/news
+Disallow: /*/news/
+Disallow: /*/news/*
+
+Sitemap: https://example.com/sitemap.xml
