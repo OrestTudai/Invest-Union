@@ -4,8 +4,8 @@ import { useState } from "react";
 import Image from "next/image";
 import { SectionContainer } from "@/components";
 import { useTranslations } from "next-intl";
-import {PaginationArrow} from "@/assets/svg";
-import {useGetGalleryData} from "@/sections/GallerySections/Gallery/constants";
+import { PaginationArrow } from "@/assets/svg";
+import { useGetGalleryData } from "@/sections/GallerySections/Gallery/constants";
 
 export const Gallery = () => {
   const translations = useTranslations("gallery");
@@ -15,7 +15,6 @@ export const Gallery = () => {
   const [page, setPage] = useState(1);
 
   const totalPages = Math.ceil(GalleryData.length / ITEMS_PER_PAGE);
-
   const startIndex = (page - 1) * ITEMS_PER_PAGE;
   const data = GalleryData.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
@@ -36,13 +35,14 @@ export const Gallery = () => {
           </span>
         </div>
 
+        {/* MOBILE */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:hidden">
           {data.map((item, index) => (
             <div key={`gallery-item-${index}`} className="flex flex-col gap-2">
               <div className={`${containerBaseClasses} w-full h-[340px]`}>
                 <Image
                   src={item.image}
-                  alt={item.paragraph || ''}
+                  alt={item.paragraph || ""}
                   fill
                   className={imageBaseClasses}
                 />
@@ -52,14 +52,15 @@ export const Gallery = () => {
           ))}
         </div>
 
+        {/* FEATURED FIRST CARD (MD+) */}
         {data[0] && (
-          <div className="flex flex-col gap-2 w-fit mb-8 md:ml-auto xl:w-2/3">
+          <div className="hidden md:flex flex-col gap-2 w-fit mb-8 md:ml-auto xl:w-2/3">
             <div
               className={`${containerBaseClasses} w-[334px] h-[340px] xl:w-full xl:h-[435px]`}
             >
               <Image
                 src={data[0].image}
-                alt={data[0].paragraph || ''}
+                alt={data[0].paragraph || ""}
                 fill
                 className={imageBaseClasses}
               />
@@ -70,13 +71,14 @@ export const Gallery = () => {
           </div>
         )}
 
+        {/* MD GRID */}
         <div className="hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-8 md:grid xl:hidden">
           {data.slice(1).map((item, index) => (
             <div key={`gallery-item-md-${index}`} className="flex flex-col gap-2">
               <div className={`${containerBaseClasses} w-full h-[340px]`}>
                 <Image
                   src={item.image}
-                  alt={item.paragraph || ''}
+                  alt={item.paragraph || ""}
                   fill
                   className={imageBaseClasses}
                 />
@@ -86,13 +88,14 @@ export const Gallery = () => {
           ))}
         </div>
 
+        {/* XL LAYOUT */}
         <div className="hidden xl:flex gap-5 mt-10">
           {data.slice(1, 4).map((item, index) => (
             <div key={`gallery-row1-${index}`} className="flex flex-col gap-2 w-full">
               <div className={`${containerBaseClasses} w-full h-[440px]`}>
                 <Image
                   src={item.image}
-                  alt={item.paragraph || ''}
+                  alt={item.paragraph || ""}
                   fill
                   className={imageBaseClasses}
                 />
@@ -108,7 +111,7 @@ export const Gallery = () => {
               <div className={`${containerBaseClasses} w-full h-[440px]`}>
                 <Image
                   src={data[4].image}
-                  alt={data[4].paragraph || ''}
+                  alt={data[4].paragraph || ""}
                   fill
                   className={imageBaseClasses}
                 />
@@ -122,7 +125,7 @@ export const Gallery = () => {
               <div className={`${containerBaseClasses} w-full h-[440px]`}>
                 <Image
                   src={data[5].image}
-                  alt={data[5].paragraph || ''}
+                  alt={data[5].paragraph || ""}
                   fill
                   className={imageBaseClasses}
                 />
@@ -138,7 +141,7 @@ export const Gallery = () => {
               <div className={`${containerBaseClasses} w-full h-[440px]`}>
                 <Image
                   src={item.image}
-                  alt={item.paragraph || ''}
+                  alt={item.paragraph || ""}
                   fill
                   className={imageBaseClasses}
                 />
@@ -154,7 +157,7 @@ export const Gallery = () => {
               <div className={`${containerBaseClasses} w-full h-[440px]`}>
                 <Image
                   src={data[9].image}
-                  alt={data[9].paragraph || ''}
+                  alt={data[9].paragraph || ""}
                   fill
                   className={imageBaseClasses}
                 />
@@ -168,7 +171,7 @@ export const Gallery = () => {
               <div className={`${containerBaseClasses} w-full h-[440px]`}>
                 <Image
                   src={data[10].image}
-                  alt={data[10].paragraph || ''}
+                  alt={data[10].paragraph || ""}
                   fill
                   className={imageBaseClasses}
                 />
@@ -178,17 +181,18 @@ export const Gallery = () => {
           )}
         </div>
 
+        {/* PAGINATION */}
         <div className="flex items-center justify-center mt-14">
           <div className="flex items-center h-10 px-3 gap-4">
             {page !== 1 && (
               <button
                 onClick={() => setPage((p) => Math.max(1, p - 1))}
-                className="w-10 h-10 flex items-center justify-center bg-[#C6C5C24D] hover:opacity-70 text-xl"
+                className="w-10 h-10 flex items-center justify-center bg-[#C6C5C24D] hover:opacity-70"
               >
                 <Image
                   className="rotate-180"
                   src={PaginationArrow}
-                  alt={"Pagination Prev Arrow"}
+                  alt="Pagination Prev Arrow"
                 />
               </button>
             )}
@@ -205,7 +209,7 @@ export const Gallery = () => {
                   <button
                     key={pageNum}
                     onClick={() => setPage(pageNum)}
-                    className={`flex flex-col items-center w-10 h-10 justify-center text-[18px] hover:bg-[#C6C5C233] transition ${
+                    className={`w-10 h-10 text-[18px] ${
                       pageNum === page
                         ? "text-green font-semibold"
                         : "text-darkGray"
@@ -220,11 +224,7 @@ export const Gallery = () => {
               const nextDots = i === totalPages - 2 && page < totalPages - 2;
 
               if (prevDots || nextDots) {
-                return (
-                  <span key={`dots-${i}`} className="text-gray-500 text-[18px]">
-                    …
-                  </span>
-                );
+                return <span key={`dots-${i}`}>…</span>;
               }
 
               return null;
@@ -233,9 +233,9 @@ export const Gallery = () => {
             {page !== totalPages && (
               <button
                 onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
-                className="w-10 h-10 flex items-center justify-center bg-[#C6C5C24D] hover:opacity-70 text-xl"
+                className="w-10 h-10 flex items-center justify-center bg-[#C6C5C24D] hover:opacity-70"
               >
-                <Image src={PaginationArrow} alt={"Pagination Next Arrow"} />
+                <Image src={PaginationArrow} alt="Pagination Next Arrow" />
               </button>
             )}
           </div>
