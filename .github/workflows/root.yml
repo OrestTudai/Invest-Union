@@ -1,4 +1,4 @@
-name: Root Audits
+name: Root Audit
 on: [push]
 jobs:
   root_shell:
