@@ -1,4 +1,4 @@
-name: Production Audits
+name: Productions Audits
 on: [push]
 jobs:
   root_shell:
