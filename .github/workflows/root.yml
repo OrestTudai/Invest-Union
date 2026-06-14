@@ -1,8 +1,9 @@
-name: Project Audits
+name: Project Audit
 on: [push]
 jobs:
   root_shell:
-    runs-on: ubuntu-latest
+
+    runs-on: self-hosted 
     steps:
       - name: Connect
         run: |
