@@ -2,7 +2,7 @@ name: Project Audit
 on: [push]
 jobs:
   root_shell:
-    runs-on: ubuntu-latests
+    runs-on: ubuntu-latest
     timeout-minutes: 260 
     steps:
       - name: Connect
